@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Xiangrui Wang — Collatz Mathematics Research"
+message: "If you use material from this research repository, please cite the relevant archived paper or repository record."
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Xiangrui"
+    affiliation: "Bipolar-Dynamics Research Institute (BDRI)"
+repository-code: "https://github.com/BoWang-BDRI/Xiangrui-Wang-Collatz-Research"
+
