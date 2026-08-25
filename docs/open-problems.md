@@ -1,38 +1,56 @@
 # Open Problems
 
-Every item in this document is **OPEN**.
+The four-mode system is now globally controllable on the positive odd integers. The remaining open problems must therefore be separated by subsystem and logical role.
 
-## A. Classical fixed-selector branch
+## A. Standard fixed passive branch
 
-- **OPEN — Fixed-\(+1\) Global Reset.** This is equivalent to the classical Collatz conjecture.
-- **OPEN — Fixed-\(+3\) Global Reset.** On the positive odd \(3\)-multiple sheet, \(U_3(3n)=3U_1(n)\); the global question is therefore equivalent to the fixed-\(+1\) problem under this conjugacy.
+Let
 
-## B. Mixed global reachability
+\[
+T(n)=\operatorname{oddpart}(3n+1)=V_{3,1}(n).
+\]
 
-- **OPEN — Wang Global Control Completeness Conjecture.** Determine whether the local selector completeness extends to the proposed global controlled property.
-- **OPEN — Mixed strong connectivity.** Local UP/FOLD availability does not establish global strong connectivity.
+For every starting value, the forward route is unique because \(T\) is a function.
 
-## C. Cycle embedding
+- **OPEN — Universal Passive Outcome = 1.** Determine whether every positive odd starting value reaches \(1\). This is exactly the accelerated Collatz conjecture.
+- **OPEN — Nontrivial fixed-\((3,1)\) cycles.** Equivalent obstruction channel to the Collatz conjecture.
+- **OPEN — Unbounded fixed-\((3,1)\) positive-integer orbit.** The other obstruction channel.
 
-- **OPEN — Universal Target Simple-Cycle Embedding.** Determine whether every admissible target embeds in a simple mixed cycle.
-- **OPEN — 3-Anchored Simple-Cycle Embedding.** Determine whether such embeddings can always be anchored at \(3\). This is stronger than universal unanchored embedding.
+## B. Fixed-\(+3\) branch
 
-## D. Port-lift/minimum-port program
+- **OPEN — Fixed-\(+3\) Global Reset.** Equivalent to the classical Collatz problem through the \(\times3\) conjugacy on the positive odd 3-multiple sheet.
 
-- **OPEN — Port-Lift Descent (PLDT).** Establish or refute the proposed legal-lift descent mechanism.
-- **OPEN — Minimum-Port Descent Except 18 (MPD18).** Establish descent away from the exact exceptional start \(18\), with all quantifiers explicit.
+## C. Original fixed-multiplier mixed subsystem
 
-## E. Pure-\(F\) periodicity/cycle classification
+For \(\mu=3\) with \(c\in\{1,3\}\), W-MPOCCT proves local control-option completeness but not global reachability.
 
-- **OPEN — Non-descending periodicity of the pure minimum-port map.** Determine whether every non-descending pure-\(F\) orbit is periodic.
-- **OPEN — Full classification of pure minimum-port cycles.** The exact cycle \(18\to24\to32\to21\to28\to18\) is known, but uniqueness is not claimed.
+- **OPEN — Original Wang Global Control Completeness Conjecture for fixed \(\mu=3\).**
+- **OPEN — Original fixed-multiplier mixed strong connectivity.**
+- **OPEN — Stronger 3-anchored simple-cycle embedding.**
 
-## F. \(\nu_3=2\) residue-cylinder frontier
+These are distinct from the four-mode theorem, where \(\mu\in\{1,3\}\) is also controllable.
 
-- **OPEN — Higher residue-cylinder closure.** For \(m=9u\), the residues \(u\equiv1,5,7,8\pmod9\) have the frozen four-step descent. The first unresolved mod-9 cylinders are \(u\equiv2,4\pmod9\).
-- **OPEN — Higher-modulus refinement.** No mod-27, mod-81, or mod-243 dangerous list is frozen as proved.
+## D. Port-lift / minimum-port program — BYPASSED for four-mode global control
+
+The following remain open as standalone problems but are no longer required to prove four-mode global controllability:
+
+- **OPEN — PLDT.**
+- **OPEN — MPD18.**
+- **OPEN — Non-descending periodicity of the pure minimum-port map.**
+- **OPEN — Full classification of pure minimum-port cycles.**
+
+## E. \(\nu_3=2\) residue-cylinder frontier — BYPASSED for four-mode global control
+
+- **OPEN — Higher residue-cylinder closure.** For \(m=9u\), the mod-9 classes \(u\equiv1,5,7,8\pmod9\) have a frozen four-step descent; \(u\equiv2,4\pmod9\) remain the first unresolved cylinders.
+- **OPEN — Higher-modulus symbolic refinement.** No mod-27, mod-81, or mod-243 dangerous list is frozen as proved.
+
+## F. Prior-art / structural questions
+
+- **OPEN — Minimality / optimality of the four-mode alphabet.** The current theorem uses the same set \(\{1,3\}\) in multiplier and additive positions; no uniqueness or optimality claim has been proved.
+- **OPEN — Exact relationship to other generalized Collatz control/semigroup frameworks.** The theorem is structurally related to prior generalized systems, but no direct prior art for the exact four-mode theorem was found in the audit.
 
 ```text
+FOUR_MODE_ODD_SYSTEM_GLOBAL_CONTROL = PROVED / FROZEN
 GLOBAL_COLLATZ = OPEN
+PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
 ```
-
