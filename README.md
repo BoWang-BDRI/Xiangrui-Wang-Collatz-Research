@@ -6,171 +6,99 @@ This repository is the public mathematical research index for **Collatz-type dis
 
 **Researcher:** Xiangrui Wang  
 **Institution:** Bipolar-Dynamics Research Institute (BDRI)  
-**Research area:** Collatz-type dynamics, discrete arithmetic systems, residue dynamics, dyadic normalization  
+**Research area:** Collatz-type dynamics, arithmetic dynamics, controlled odd maps, dyadic normalization  
 **Contact:** xljun521521@gmail.com
 
-## Scope and core research object
+## Research hierarchy
 
-Let
+### Layer I — Fixed multiplier \(3\): local control completeness
 
-\[
-\Omega=\mathbb N_{\mathrm{odd}}^{+}.
-\]
-
-For \(c\in\{1,3\}\), define the accelerated selector maps
+For positive odd integers \(\Omega=\mathbb N_{\mathrm{odd}}^{+}\), define
 
 \[
-U_c(n)=\operatorname{oddpart}(3n+c)
-=\frac{3n+c}{2^{\nu_2(3n+c)}}.
+U_c(n)=\operatorname{oddpart}(3n+c),\qquad c\in\{1,3\}.
 \]
 
-All dynamical theorem statements in this repository are restricted to positive integers and positive odd accelerated states. Negative, rational, real, and p-adic extensions are outside the theorem domain.
+The **Wang Minimal Positive Odd-Pair Complete Control Theorem (W-MPOCCT)** is **PROVED / FROZEN**. It establishes local control-option completeness for the complementary selectors \(+1,+3\): one shallow gate, one folding gate, both local height signs, and the exact mod-3 odd-image partition.
 
-## Main proved theorem
+> In Layer I, “complete” means local control-option completeness only. It does not imply global strong connectivity.
 
-### Wang Minimal Positive Odd-Pair Complete Control Theorem (W-MPOCCT)
+See [the W-MPOCCT overview](docs/theorem-overview.md).
 
-### 王氏最小正奇数对完备控制定理
+### Layer II — Four-mode system: global control completeness
 
-The minimal positive odd pair \(\{1,3\}\) appears in two coupled roles:
-
-1. the multiplicative baseline / upper layer \(1N,3N\);
-2. the additive selector pair \(+1,+3\).
-
-Across the two selectors, exact dyadic normalization gives one shallow gate with valuation \(1\), one folding gate with valuation at least \(2\), both local height signs, and a full odd-output partition by divisibility by \(3\).
-
-> “Complete” means local control-option completeness only. It does not mean global reachability or strong connectivity.
-
-A proof-focused summary is provided in [the theorem overview](docs/theorem-overview.md).
-
-## Frozen proved structure
-
-### Dyadic threshold
+Define the exact four-mode positive-odd system
 
 \[
-2<3<4,
-\qquad
-\frac32>1>\frac34.
+V_{\mu,c}(n)=\operatorname{oddpart}(\mu n+c),
+\qquad (\mu,c)\in\{1,3\}\times\{1,3\}.
 \]
 
-### Selector valuation complementarity
+The dyadic exponent is always the exact state-determined valuation \(\nu_2(\mu n+c)\); it is not a free control parameter.
 
-For every positive odd \(n\),
+The **Four-Mode Odd-System Global Control Completeness Theorem** is **PROVED / FROZEN** after independent red-team audit. Its constructive core is:
+
+- **Global reset:** repeated \((1,1)\) sends every positive odd state to \(1\).
+- **Uniform smaller target source:** every odd target \(N>1\) has a positive odd source \(p<8N/9\) that reaches \(N\) in at most three exact control steps.
+- **Global generation:** strong induction gives \(1\leadsto N\) for every positive odd \(N\).
+- **Global strong connectivity:** \(x\leadsto1\leadsto y\) for all positive odd \(x,y\).
+- **Universal exact cycle embedding:** every positive odd state lies on a finite nontrivial exact controlled cycle.
+- **Global escape control:** the \(\mu=3\) shallow branch gives an exact escaping trajectory.
+
+See [the four-mode theorem overview](docs/four-mode-global-control-theorem.md).
+
+### Layer III — Standard Collatz: unique passive route, open universal outcome
+
+The standard accelerated Collatz map is the single fixed mode
 
 \[
-\{\nu_2(3n+1),\nu_2(3n+3)\}
-=\{1,b(n)\},
-\qquad b(n)\ge2.
+T(n)=V_{3,1}(n)=\operatorname{oddpart}(3n+1).
 \]
 
-### Odd-image partition
+Fixing both control coordinates makes the forward route from each initial state unique. This route uniqueness is **definitional**.
 
-Define
+The remaining global question is different:
 
 \[
-S_{\not3}=\{m\in\Omega:3\nmid m\},
-\qquad
-S_3=\{m\in\Omega:3\mid m\}.
+\forall n\in\Omega,\ \exists k\ge0:\ T^k(n)=1\ ?
 \]
 
-Then
+This **Universal Passive Outcome Problem** is exactly the classical Collatz conjecture and remains **OPEN**.
 
-\[
-\operatorname{Im}(U_1)=S_{\not3},
-\qquad
-\operatorname{Im}(U_3)=S_3,
-\]
+## Disposition of earlier conjectures
 
-and therefore
+### RESOLVED IN THE FOUR-MODE SYSTEM
 
-\[
-S_{\not3}\cap S_3=\varnothing,
-\qquad
-S_{\not3}\sqcup S_3=\Omega.
-\]
+- outward reachability;
+- global strong connectivity;
+- universal closed-walk embedding;
+- universal target simple-cycle embedding;
+- the four-mode analogue of global control completeness.
 
-### Local height polarity
+### BYPASSED / NOT REQUIRED for the four-mode global proof
 
-For \(n>3\),
+The following remain mathematically open as standalone statements, but are no longer prerequisites for the four-mode theorem:
 
-\[
-\nu_2(3n+c)=1\Rightarrow U_c(n)>n,
-\]
+- PLDT;
+- MPD18;
+- pure-\(F\) non-descending periodicity;
+- pure-\(F\) cycle classification;
+- higher \(\nu_3=2\) residue-cylinder closure.
 
-whereas
+### RETAINED OPEN
 
-\[
-\nu_2(3n+c)\ge2\Rightarrow U_c(n)<n.
-\]
+- standard fixed-\((3,1)\) Collatz global reset;
+- fixed-\(+3\) global reset (Collatz-equivalent);
+- the original fixed-multiplier \(\mu=3\), \(+1/+3\) global-control conjecture;
+- stronger anchored-simple-cycle questions;
+- universal passive outcome \(=1\).
 
-### RESET and ESCAPE
+See [research status](RESEARCH_STATUS.md), [open problems](docs/open-problems.md), and [public claims boundary](PUBLIC_CLAIMS_BOUNDARY.md).
 
-- **RESET:** while \(n>3\), repeatedly choose the folding selector. Strict descent reaches \(\{1,3\}\) in finitely many steps. Under the terminal convention \(U_3(1)=3\) and \(U_3(3)=3\), the terminal state is \(3\).
-- **ESCAPE:** repeatedly choosing the shallow selector produces a strictly increasing orbit (after the possible initial state \(1\)) and divergence to \(+\infty\).
+## Current papers
 
-### Fixed-selector loss of control
-
-The standard accelerated Collatz map is the fixed policy \(c_k\equiv1\). Fixing the selector removes active local choice between shallow and folding gates; the UP/FOLD sequence is imposed by residue evolution. This observation does **not** imply global convergence.
-
-On the positive odd \(3\)-multiple sheet, multiplication by \(3\) gives the exact conjugacy
-
-\[
-U_3(3n)=3U_1(n).
-\]
-
-## Current technical frontier
-
-Define the pure minimum-port map
-
-\[
-F(3k)=4k,
-\qquad
-F(3k+1)=2k,
-\qquad
-F(3k+2)=2k+1,
-\]
-
-or equivalently
-
-\[
-F(m)=2^{\mathbf 1_{3\mid m}}\left\lfloor\frac{2m}{3}\right\rfloor.
-\]
-
-The currently frozen reductions are only:
-
-- \(m\not\equiv0\pmod3\): one-step descent;
-- \(\nu_3(m)=1\): two-step descent;
-- for \(m=9u\), \(u\bmod9\in\{1,5,7,8\}\Rightarrow F^4(m)<m\).
-
-The first unresolved mod-9 cylinders are \(u\equiv2,4\pmod9\). No mod-27, mod-81, or mod-243 dangerous list is frozen as proved.
-
-The exact minimum-port cycle
-
-\[
-18\to24\to32\to21\to28\to18
-\]
-
-is a finite symbolic certificate. It does not establish uniqueness. A legal two-lift port repair sends the exceptional minimum start \(18\) to \(17\):
-
-```text
-M18_TWO_LIFT_DESCENT = PROVED
-```
-
-## Open conjectures
-
-The following are all **OPEN**:
-
-1. Fixed-\(+1\) Global Reset (equivalent to the classical Collatz conjecture).
-2. Fixed-\(+3\) Global Reset (equivalent through the \(\times3\) conjugacy on the \(3\)-multiple odd sheet).
-3. Wang Global Control Completeness Conjecture.
-4. Universal Target Simple-Cycle Embedding.
-5. 3-Anchored Simple-Cycle Embedding (stronger than item 4).
-6. Port-Lift Descent (PLDT).
-7. Minimum-Port Descent Except 18 (MPD18).
-8. Non-descending periodicity of the pure minimum-port map.
-9. Full classification of pure minimum-port cycles.
-
-See [open problems](docs/open-problems.md), the [research roadmap](docs/research-roadmap.md), [research status](RESEARCH_STATUS.md), and the [public claims boundary](PUBLIC_CLAIMS_BOUNDARY.md).
+1. **The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3** — W-MPOCCT local theorem.
+2. **Global Control Completeness of the Four-Mode Odd System oddpart(μn+c), μ,c∈{1,3}** — four-mode global theorem, independently audited.
 
 ## Absolute mathematical guardrails
 
@@ -180,9 +108,8 @@ ODD_STATE_DOMAIN = N_ODD_POSITIVE
 NEGATIVE_RATIONAL_REAL_PADIC_OBJECTS = OUTSIDE_THEOREM_DOMAIN
 
 GLOBAL_COLLATZ = OPEN
-MIXED_PLUS1_PLUS3_CONTROL_SYSTEM != STANDARD_COLLATZ_SINGLE_PLUS1_BRANCH
-MIXED_CYCLE != STANDARD_COLLATZ_COUNTEREXAMPLE
-LOCAL_CONTROL_COMPLETENESS != GLOBAL_STRONG_CONNECTIVITY
+FOUR_MODE_GLOBAL_CONTROL != STANDARD_COLLATZ_PROOF
+PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
+DUAL/MIXED_CONTROLLED_CYCLE != STANDARD_COLLATZ_COUNTEREXAMPLE
 NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
 ```
-
