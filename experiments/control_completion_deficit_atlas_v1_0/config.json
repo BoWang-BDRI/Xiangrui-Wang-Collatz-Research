@@ -1,0 +1,17 @@
+{
+  "public_seed": 20260826,
+  "named_starts": [27, 97, 871, 6171],
+  "tier_b_max_inclusive": 1000000,
+  "tier_b_step_cap": 100000,
+  "tier_c_count": 50000,
+  "tier_c_max_inclusive": 1000000000000,
+  "tier_c_step_cap": 100000,
+  "sturmian_odd_return_symbols": 1000000,
+  "sturmian_factor_max_length": 64,
+  "analysis_cohort_per_tier": 4096,
+  "state_sample_capacity": 100000,
+  "h1_sample_capacity_per_window": 100000,
+  "windows": [4, 8, 16, 32, 64],
+  "critical_window_lengths": [8, 16, 32, 64],
+  "residue_moduli": [8, 16, 32, 64, 128, 256]
+}

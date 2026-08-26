@@ -1,0 +1,11 @@
+{
+  "boundary_1_3_separate": true,
+  "failures": 0,
+  "n_gt_3_quantifier_respected": true,
+  "range": [
+    1,
+    1000000
+  ],
+  "status": "PASS_EXACT_FINITE_DOMAIN",
+  "tested_odd_n": 500000
+}

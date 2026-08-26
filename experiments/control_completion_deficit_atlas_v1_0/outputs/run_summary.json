@@ -1,0 +1,70 @@
+{
+  "analysis_orbit_count": 8196,
+  "compensation_event_rows": 147297,
+  "config": {
+    "analysis_cohort_per_tier": 4096,
+    "critical_window_lengths": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "h1_sample_capacity_per_window": 100000,
+    "named_starts": [
+      27,
+      97,
+      871,
+      6171
+    ],
+    "public_seed": 20260826,
+    "residue_moduli": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "state_sample_capacity": 100000,
+    "sturmian_factor_max_length": 64,
+    "sturmian_odd_return_symbols": 1000000,
+    "tier_b_max_inclusive": 1000000,
+    "tier_b_step_cap": 100000,
+    "tier_c_count": 50000,
+    "tier_c_max_inclusive": 1000000000000,
+    "tier_c_step_cap": 100000,
+    "windows": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "debt_peak_event_rows": 374124,
+  "elapsed_seconds": 241.05100393295288,
+  "feature_cache": {
+    "currsize": 300000,
+    "hits": 23418654,
+    "maxsize": 300000,
+    "misses": 4276302
+  },
+  "global_collatz": "OPEN",
+  "max_abs_height_cocycle_error": 7.105427357601002e-15,
+  "numerical_evidence_is_proof": false,
+  "passive_run_rows": 246962,
+  "public_seed": 20260826,
+  "state_sample_rows": 100000,
+  "status": "FINITE_EXPERIMENT_COMPLETE",
+  "tier_b_first_break_counts": {
+    "CRITICAL_FORBIDDEN_GRAMMAR": 209341,
+    "DEEP_FOLD": 290658,
+    "NO_BREAK_BEFORE_TERMINAL_OR_CAP": 1
+  },
+  "tier_b_start_count": 500000,
+  "tier_c_start_count": 50000,
+  "tier_c_status_counts": {
+    "REACHED_1": 50000
+  },
+  "transition_cache_entries": 3089494
+}
