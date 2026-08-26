@@ -1,10 +1,32 @@
 cff-version: 1.2.0
 title: "Xiangrui Wang — Collatz Mathematics Research"
-message: "If you use material from this research repository, please cite the relevant archived paper or repository record."
+message: "If you use material from this research repository, please cite the relevant archived paper listed below."
 type: software
 authors:
   - family-names: "Wang"
     given-names: "Xiangrui"
     affiliation: "Bipolar-Dynamics Research Institute (BDRI)"
 repository-code: "https://github.com/BoWang-BDRI/Xiangrui-Wang-Collatz-Research"
-
+url: "https://github.com/BoWang-BDRI/Xiangrui-Wang-Collatz-Research"
+references:
+  - type: article
+    title: "The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22096604"
+    url: "https://doi.org/10.5281/zenodo.22096604"
+  - type: article
+    title: "From Local Selector Completeness to Global Control Completeness in the Four-Mode Odd System"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22104057"
+    url: "https://doi.org/10.5281/zenodo.22104057"
+  - type: article
+    title: "从局部选择完备到全局控制完备：四模式正奇数系统的构造性定理"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22104101"
+    url: "https://doi.org/10.5281/zenodo.22104101"
