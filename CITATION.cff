@@ -30,3 +30,17 @@ references:
         given-names: "Xiangrui"
     doi: "10.5281/zenodo.22104101"
     url: "https://doi.org/10.5281/zenodo.22104101"
+  - type: article
+    title: "Global Exact Controllability of the Nonzero-Integer Microdynamics under Signed Affine Controls and Forced Halving"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22109060"
+    url: "https://doi.org/10.5281/zenodo.22109060"
+  - type: article
+    title: "带符号仿射控制与强制二分下非零整数微动力的全局精确可控性"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22108987"
+    url: "https://doi.org/10.5281/zenodo.22108987"
