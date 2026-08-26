@@ -15,6 +15,8 @@ All statements use the positive-integer / positive-odd accelerated-state domain.
 | Fixed-selector loss of control | PROVED / FROZEN | Structural; not convergence |
 | \(U_3|_{3\Omega}\) conjugacy to \(U_1\) | PROVED / FROZEN | Exact identity |
 
+**Archived Layer I paper:** https://doi.org/10.5281/zenodo.22096604
+
 ## PROVED / FROZEN — Layer II: four-mode global control
 
 For
@@ -40,6 +42,13 @@ the following passed independent red-team audit:
 ```text
 FOUR_MODE_ODD_SYSTEM_GLOBAL_CONTROL = PROVED / FROZEN
 ```
+
+### Archived Layer II papers
+
+- **English:** *From Local Selector Completeness to Global Control Completeness in the Four-Mode Odd System*  
+  https://doi.org/10.5281/zenodo.22104057
+- **中文：**《从局部选择完备到全局控制完备：四模式正奇数系统的构造性定理》  
+  https://doi.org/10.5281/zenodo.22104101
 
 ## RESOLVED IN THE FOUR-MODE SYSTEM
 
