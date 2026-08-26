@@ -7,23 +7,19 @@ This page indexes the archived papers associated with the public Collatz mathema
 ### The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3
 
 - **Author:** Xiangrui Wang
-- **Research layer:** Fixed multiplier \(\mu=3\), additive selectors \(+1,+3\)
 - **Main result:** Wang Minimal Positive Odd-Pair Complete Control Theorem (W-MPOCCT)
-- **Status:** PROVED / FROZEN within the stated positive-integer domain
+- **Status:** PROVED / FROZEN within its stated positive-integer domain
 - **Zenodo DOI:** https://doi.org/10.5281/zenodo.22096604
 
-## 2. Layer II — Four-mode global control completeness
-
-The four-mode theorem is archived in separate English and Chinese records.
+## 2. Layer II — Positive four-mode global control completeness
 
 ### English paper
 
 **From Local Selector Completeness to Global Control Completeness in the Four-Mode Odd System**
 
 - **Author:** Xiangrui Wang
-- **Research layer:** \((\mu,c)\in\{1,3\}\times\{1,3\}\)
 - **Main result:** Four-Mode Odd-System Global Control Completeness Theorem
-- **Status:** PROVED / FROZEN within the stated positive-integer domain
+- **Status:** PROVED / FROZEN
 - **Zenodo DOI:** https://doi.org/10.5281/zenodo.22104057
 
 ### 中文论文
@@ -31,19 +27,51 @@ The four-mode theorem is archived in separate English and Chinese records.
 **《从局部选择完备到全局控制完备：四模式正奇数系统的构造性定理》**
 
 - **作者：** Xiangrui Wang
-- **研究层级：** \((\mu,c)\in\{1,3\}\times\{1,3\}\)
 - **主要结果：** 四模式正奇数系统全局控制完备定理
-- **状态：** 在规定的正整数定义域内 PROVED / FROZEN
+- **状态：** PROVED / FROZEN
 - **Zenodo DOI：** https://doi.org/10.5281/zenodo.22104101
+
+## 3. Layer IV — W-NIGECT / nonzero-integer global exact control
+
+The W-NIGECT theorem is archived in separate English and Chinese records.
+
+### English paper
+
+**Global Exact Controllability of the Nonzero-Integer Microdynamics under Signed Affine Controls and Forced Halving**
+
+- **Author:** Xiangrui Wang
+- **Main result:** Wang Nonzero Integer Global Exact Control Theorem (W-NIGECT)
+- **Active control domain:** \(\mathbb Z\setminus\{0\}\)
+- **Target domain:** all integers \(\mathbb Z\)
+- **Status:** PROVED / FROZEN
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22109060
+
+### 中文论文
+
+**《带符号仿射控制与强制二分下非零整数微动力的全局精确可控性》**
+
+- **作者：** Xiangrui Wang
+- **主要结果：** 王氏非零整数全局精确控制定理（W-NIGECT）
+- **活动控制域：** \(\mathbb Z\setminus\{0\}\)
+- **目标域：** 全部整数 \(\mathbb Z\)
+- **状态：** PROVED / FROZEN
+- **Zenodo DOI：** https://doi.org/10.5281/zenodo.22108987
 
 ## Scope boundary
 
-The archived four-mode theorem proves global control completeness for the controlled parent system. It does **not** prove the classical fixed-mode Collatz conjecture.
+The W-NIGECT paper proves global exact controllability of the controlled nonzero-integer microdynamics. It also proves a separate all-integer exact-targetability corollary from any nonzero source, where \(0\) is a terminal target but not an active control state.
 
 ```text
-DOMAIN = POSITIVE_INTEGERS_ONLY
-ODD_STATE_DOMAIN = N_ODD_POSITIVE
+CONTROL_DOMAIN = NONZERO_INTEGERS
+TARGET_DOMAIN = ALL_INTEGERS
+
+ZERO = VALID_TERMINAL_TARGET
+ZERO = NOT_AN_ACTIVE_CONTROL_STATE
+NO_TRANSITION_IS_DEFINED_FROM_ZERO
+
+NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
+ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
+
 GLOBAL_COLLATZ = OPEN
-FOUR_MODE_GLOBAL_CONTROL != STANDARD_COLLATZ_PROOF
-PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
+W-NIGECT != STANDARD_COLLATZ_PROOF
 ```
