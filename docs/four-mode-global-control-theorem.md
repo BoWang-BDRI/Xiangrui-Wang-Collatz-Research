@@ -1,5 +1,14 @@
 # Four-Mode Odd-System Global Control Completeness Theorem
 
+## Archived papers
+
+- **English:** *From Local Selector Completeness to Global Control Completeness in the Four-Mode Odd System*  
+  Zenodo DOI: https://doi.org/10.5281/zenodo.22104057
+- **中文：**《从局部选择完备到全局控制完备：四模式正奇数系统的构造性定理》  
+  Zenodo DOI: https://doi.org/10.5281/zenodo.22104101
+
+Companion Layer I paper: https://doi.org/10.5281/zenodo.22096604
+
 ## Status
 
 ```text
