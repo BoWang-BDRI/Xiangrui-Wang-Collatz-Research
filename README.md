@@ -95,10 +95,21 @@ The following remain mathematically open as standalone statements, but are no lo
 
 See [research status](RESEARCH_STATUS.md), [open problems](docs/open-problems.md), and [public claims boundary](PUBLIC_CLAIMS_BOUNDARY.md).
 
-## Current papers
+## Publications and archived papers
 
-1. **The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3** — W-MPOCCT local theorem.
-2. **Global Control Completeness of the Four-Mode Odd System oddpart(μn+c), μ,c∈{1,3}** — four-mode global theorem, independently audited.
+### Layer I companion paper
+
+- **The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3**  
+  DOI: https://doi.org/10.5281/zenodo.22096604
+
+### Layer II four-mode global-control paper
+
+- **English:** *From Local Selector Completeness to Global Control Completeness in the Four-Mode Odd System*  
+  DOI: https://doi.org/10.5281/zenodo.22104057
+- **中文：**《从局部选择完备到全局控制完备：四模式正奇数系统的构造性定理》  
+  DOI: https://doi.org/10.5281/zenodo.22104101
+
+See the complete [publication index](PUBLICATIONS.md).
 
 ## Absolute mathematical guardrails
 
