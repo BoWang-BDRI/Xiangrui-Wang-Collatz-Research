@@ -1,5 +1,10 @@
 # W-MPOCCT Theorem Overview
 
+## Archived paper
+
+**The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3**  
+Zenodo DOI: https://doi.org/10.5281/zenodo.22096604
+
 ## Domain
 
 Let \(\Omega=\mathbb N_{\mathrm{odd}}^+\), and for \(c\in\{1,3\}\) define
@@ -61,4 +66,3 @@ The accelerated classical Collatz map fixes \(c=1\). It therefore has no active 
 GLOBAL_COLLATZ = OPEN
 LOCAL_CONTROL_COMPLETENESS != GLOBAL_STRONG_CONNECTIVITY
 ```
-
