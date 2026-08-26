@@ -6,121 +6,133 @@ This repository is the public mathematical research index for **Collatz-type dis
 
 **Researcher:** Xiangrui Wang  
 **Institution:** Bipolar-Dynamics Research Institute (BDRI)  
-**Research area:** Collatz-type dynamics, arithmetic dynamics, controlled odd maps, dyadic normalization  
+**Research area:** Collatz-type dynamics, arithmetic dynamics, controlled odd maps, signed affine control, dyadic microdynamics  
 **Contact:** xljun521521@gmail.com
 
 ## Research hierarchy
 
-### Layer I — Fixed multiplier \(3\): local control completeness
+### Layer I — Fixed multiplier 3: local control completeness
 
-For positive odd integers \(\Omega=\mathbb N_{\mathrm{odd}}^{+}\), define
+For positive odd integers, define
 
 \[
 U_c(n)=\operatorname{oddpart}(3n+c),\qquad c\in\{1,3\}.
 \]
 
-The **Wang Minimal Positive Odd-Pair Complete Control Theorem (W-MPOCCT)** is **PROVED / FROZEN**. It establishes local control-option completeness for the complementary selectors \(+1,+3\): one shallow gate, one folding gate, both local height signs, and the exact mod-3 odd-image partition.
-
-> In Layer I, “complete” means local control-option completeness only. It does not imply global strong connectivity.
+The **Wang Minimal Positive Odd-Pair Complete Control Theorem (W-MPOCCT)** is **PROVED / FROZEN**. It establishes local control-option completeness for the complementary selectors \(+1,+3\).
 
 See [the W-MPOCCT overview](docs/theorem-overview.md).
 
-### Layer II — Four-mode system: global control completeness
+### Layer II — Positive four-mode odd system: global control completeness
 
-Define the exact four-mode positive-odd system
+Define
 
 \[
 V_{\mu,c}(n)=\operatorname{oddpart}(\mu n+c),
 \qquad (\mu,c)\in\{1,3\}\times\{1,3\}.
 \]
 
-The dyadic exponent is always the exact state-determined valuation \(\nu_2(\mu n+c)\); it is not a free control parameter.
-
-The **Four-Mode Odd-System Global Control Completeness Theorem** is **PROVED / FROZEN** after independent red-team audit. Its constructive core is:
-
-- **Global reset:** repeated \((1,1)\) sends every positive odd state to \(1\).
-- **Uniform smaller target source:** every odd target \(N>1\) has a positive odd source \(p<8N/9\) that reaches \(N\) in at most three exact control steps.
-- **Global generation:** strong induction gives \(1\leadsto N\) for every positive odd \(N\).
-- **Global strong connectivity:** \(x\leadsto1\leadsto y\) for all positive odd \(x,y\).
-- **Universal exact cycle embedding:** every positive odd state lies on a finite nontrivial exact controlled cycle.
-- **Global escape control:** the \(\mu=3\) shallow branch gives an exact escaping trajectory.
+The **Four-Mode Odd-System Global Control Completeness Theorem** is **PROVED / FROZEN**. Its constructive consequences include global reset, arbitrary positive-odd targeting, strong connectivity, universal exact cycle embedding, and escape control.
 
 See [the four-mode theorem overview](docs/four-mode-global-control-theorem.md).
 
-### Layer III — Standard Collatz: unique passive route, open universal outcome
+### Layer III — Signed odd control
 
-The standard accelerated Collatz map is the single fixed mode
-
-\[
-T(n)=V_{3,1}(n)=\operatorname{oddpart}(3n+1).
-\]
-
-Fixing both control coordinates makes the forward route from each initial state unique. This route uniqueness is **definitional**.
-
-The remaining global question is different:
+On nonzero odd states, allow signed affine controls with
 
 \[
-\forall n\in\Omega,\ \exists k\ge0:\ T^k(n)=1\ ?
+\mu\in\{1,3\},\qquad c\in\{-3,-1,1,3\}.
 \]
 
-This **Universal Passive Outcome Problem** is exactly the classical Collatz conjecture and remains **OPEN**.
+Sign reflection is an exact conjugacy, not time reversal. The positive and negative odd half-axes are connected by the explicit bridges
 
-## Disposition of earlier conjectures
+\[
+1\to-2\to-1,
+\qquad
+-1\to2\to1.
+\]
 
-### RESOLVED IN THE FOUR-MODE SYSTEM
+The resulting signed odd control graph is globally strongly connected.
 
-- outward reachability;
-- global strong connectivity;
-- universal closed-walk embedding;
-- universal target simple-cycle embedding;
-- the four-mode analogue of global control completeness.
+### Layer IV — Nonzero-integer exact micro-control
 
-### BYPASSED / NOT REQUIRED for the four-mode global proof
+Expose the integer microdynamics:
 
-The following remain mathematically open as standalone statements, but are no longer prerequisites for the four-mode theorem:
+- **nonzero odd states:** controlled affine step \(n\mapsto\mu n+c\);
+- **nonzero even states:** forced halving \(n\mapsto n/2\).
 
-- PLDT;
-- MPD18;
-- pure-\(F\) non-descending periodicity;
-- pure-\(F\) cycle classification;
-- higher \(\nu_3=2\) residue-cylinder closure.
+The **Wang Nonzero Integer Global Exact Control Theorem (W-NIGECT)** is **PROVED / FROZEN**:
 
-### RETAINED OPEN
+\[
+\forall X,Y\in\mathbb Z\setminus\{0\},\qquad X\leadsto Y.
+\]
 
-- standard fixed-\((3,1)\) Collatz global reset;
-- fixed-\(+3\) global reset (Collatz-equivalent);
-- the original fixed-multiplier \(\mu=3\), \(+1/+3\) global-control conjecture;
-- stronger anchored-simple-cycle questions;
-- universal passive outcome \(=1\).
+The active control domain is \(\mathbb Z\setminus\{0\}\), while the exact target domain is all of \(\mathbb Z\). Zero is a **valid terminal target**, but not an active control state; no transition is defined from zero.
 
-See [research status](RESEARCH_STATUS.md), [open problems](docs/open-problems.md), and [public claims boundary](PUBLIC_CLAIMS_BOUNDARY.md).
+Accordingly, the separate **Wang All-Integer Exact Targetability Corollary** gives
+
+\[
+\forall X\in\mathbb Z\setminus\{0\},\ \forall Y\in\mathbb Z,\qquad X\leadsto Y.
+\]
+
+See [the W-NIGECT theorem overview](docs/w-nigect-global-exact-control-theorem.md).
+
+### Layer V — Standard Collatz: unique passive route, open universal outcome
+
+The standard accelerated Collatz map fixes
+
+\[
+T(n)=\operatorname{oddpart}(3n+1).
+\]
+
+Its forward route from each initial state is unique by definition. The universal outcome question
+
+\[
+\forall n>0\text{ odd},\ \exists k\ge0:\ T^k(n)=1\ ?
+\]
+
+is exactly the classical Collatz conjecture and remains **OPEN**.
 
 ## Publications and archived papers
 
-### Layer I companion paper
+### Layer I
 
 - **The Minimal Positive Odd Pair {1,3} and Local Control Completeness in the Mixed Odd Maps 3n+1 and 3n+3**  
   DOI: https://doi.org/10.5281/zenodo.22096604
 
-### Layer II four-mode global-control paper
+### Layer II
 
 - **English:** *From Local Selector Completeness to Global Control Completeness in the Four-Mode Odd System*  
   DOI: https://doi.org/10.5281/zenodo.22104057
 - **中文：**《从局部选择完备到全局控制完备：四模式正奇数系统的构造性定理》  
   DOI: https://doi.org/10.5281/zenodo.22104101
 
+### Layer IV — W-NIGECT
+
+- **English:** *Global Exact Controllability of the Nonzero-Integer Microdynamics under Signed Affine Controls and Forced Halving*  
+  DOI: https://doi.org/10.5281/zenodo.22109060
+- **中文：**《带符号仿射控制与强制二分下非零整数微动力的全局精确可控性》  
+  DOI: https://doi.org/10.5281/zenodo.22108987
+
 See the complete [publication index](PUBLICATIONS.md).
 
 ## Absolute mathematical guardrails
 
 ```text
-DOMAIN = POSITIVE_INTEGERS_ONLY
-ODD_STATE_DOMAIN = N_ODD_POSITIVE
-NEGATIVE_RATIONAL_REAL_PADIC_OBJECTS = OUTSIDE_THEOREM_DOMAIN
+CONTROL_DOMAIN = NONZERO_INTEGERS
+TARGET_DOMAIN = ALL_INTEGERS
+
+ZERO = VALID_TERMINAL_TARGET
+ZERO = NOT_AN_ACTIVE_CONTROL_STATE
+NO_TRANSITION_IS_DEFINED_FROM_ZERO
+
+NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
+ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
+
+SIGN_MIRROR != TIME_REVERSAL
 
 GLOBAL_COLLATZ = OPEN
-FOUR_MODE_GLOBAL_CONTROL != STANDARD_COLLATZ_PROOF
+W-NIGECT != STANDARD_COLLATZ_PROOF
 PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
-DUAL/MIXED_CONTROLLED_CYCLE != STANDARD_COLLATZ_COUNTEREXAMPLE
 NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
 ```
