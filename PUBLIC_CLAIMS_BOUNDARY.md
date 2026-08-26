@@ -5,23 +5,53 @@ This repository documents mathematical research on Collatz-type discrete dynamic
 - A theorem is labeled **PROVED** only after a complete symbolic argument has been independently checked.
 - Numerical search, residue census, or finite enumeration is **FINITE OBSERVATION** unless it is itself an exhaustive proof for the stated finite domain.
 - The fixed-multiplier \(+1/+3\) system is not the standard fixed-\(+1\) Collatz map.
-- The four-mode system \((\mu,c)\in\{1,3\}^2\) is a controlled parent system, not the standard Collatz map.
-- Global controllability of the four-mode system does **not** prove convergence of the fixed mode \((3,1)\).
-- A mixed or four-mode controlled cycle is not a counterexample to the classical Collatz conjecture.
-- Forward-route uniqueness of the fixed mode is definitional; universal terminal outcome \(1\) is a separate open statement.
+- The positive four-mode system is a controlled parent system, not the standard Collatz map.
+- W-NIGECT extends the controlled parent system to signed nonzero-integer microdynamics; it still does **not** prove the fixed classical Collatz conjecture.
+- Sign reflection is a conjugacy that preserves arrow orientation; it is not time reversal.
 - Results labeled **BYPASSED / NOT REQUIRED** remain open as standalone mathematical statements unless separately proved.
 - Novelty is not claimed without prior-art review.
-- All dynamical theorem statements are restricted to positive integers and positive odd accelerated states.
+
+## Formal W-NIGECT boundary
+
+Active control domain:
+
+\[
+\mathcal D_{\mathrm{active}}=\mathbb Z\setminus\{0\}.
+\]
+
+Exact target domain:
+
+\[
+\mathcal T=\mathbb Z.
+\]
+
+Rules:
+
+- nonzero odd state: controlled affine transition \(n\mapsto\mu n+c\), \(\mu\in\{1,3\}\), \(c\in\{-3,-1,1,3\}\);
+- nonzero even state: forced transition \(n\mapsto n/2\);
+- zero: valid terminal target only; no outgoing transition is defined;
+- a finite path may terminate at any reached target vertex, including a nonzero even target;
+- the signed odd-part macro-map is a compressed representation of the nonzero microtrajectory and is not defined at zero.
+
+Therefore:
 
 ```text
-DOMAIN = POSITIVE_INTEGERS_ONLY
-ODD_STATE_DOMAIN = N_ODD_POSITIVE
-NEGATIVE_RATIONAL_REAL_PADIC_OBJECTS = OUTSIDE_THEOREM_DOMAIN
+CONTROL_DOMAIN = NONZERO_INTEGERS
+TARGET_DOMAIN = ALL_INTEGERS
 
-FOUR_MODE_ODD_SYSTEM_GLOBAL_CONTROL = PROVED / FROZEN
+ZERO = VALID_TERMINAL_TARGET
+ZERO = NOT_AN_ACTIVE_CONTROL_STATE
+ZERO = OUTSIDE_SIGNED_ODDPART_MACRO_DOMAIN
+NO_TRANSITION_IS_DEFINED_FROM_ZERO
+
+NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
+ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
+FULL_INTEGER_STRONG_CONNECTIVITY = NOT_CLAIMED
+
+SIGN_MIRROR != TIME_REVERSAL
+
 GLOBAL_COLLATZ = OPEN
-FOUR_MODE_GLOBAL_CONTROL != STANDARD_COLLATZ_PROOF
+W-NIGECT != STANDARD_COLLATZ_PROOF
 PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
-DUAL/MIXED_CONTROLLED_CYCLE != STANDARD_COLLATZ_COUNTEREXAMPLE
 NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
 ```
