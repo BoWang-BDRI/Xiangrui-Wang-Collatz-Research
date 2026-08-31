@@ -83,6 +83,19 @@ These two records archive the English and Chinese versions of the current Layer 
 
 See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness](docs/dyadic-base-map-threefold-folding-global-completeness.md).
 
+## 5. Layer VI — Exact finite valuation geometry and root-anchored certificates
+
+### English paper
+
+**Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words**
+
+- **Author:** Xiangrui Wang
+- **Scope:** finite valuation words, affine height geometry, partial dyadic tails, direct-to-root normalization ports, exact finite inverse words, \(2\)-adic branch separation, and root-anchored finite certificates
+- **Main finite identity:** \(2^{A_K}(n_K-n_0)=H_w(n_0)\), with \(P_w=2^{A_K}-3^K\) and \(H_w(n_0)=C_w-P_wn_0\)
+- **Paper status:** mathematics and formal-definition repair PASS; no global convergence theorem is proved anew in this paper
+- **Community status:** classical Collatz conjecture remains OPEN
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22197750
+
 ## Status boundary
 
 The repository distinguishes the author's project theorem status from external mathematical acceptance.
@@ -93,5 +106,6 @@ PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
 EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 
+THIS_PAPER_GLOBAL_CLAIM = NONE
 W-NIGECT != STANDARD_COLLATZ_PROOF
 ```
