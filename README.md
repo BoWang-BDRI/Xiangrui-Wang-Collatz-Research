@@ -152,6 +152,11 @@ with
 2^{A_K}(n_K-n_0)=H_w(n_0).
 \]
 
+The first paper in this continuation has now been archived on Zenodo:
+
+**Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words**  
+DOI: https://doi.org/10.5281/zenodo.22197750
+
 The active continuation includes partial dyadic tails, root-anchored exact certificates, port-resolved inverse genealogy, MergeDAG organization, and structural translation of finite parity/stopping-window phenomena.
 
 ## Publications and archived papers
@@ -182,6 +187,11 @@ The active continuation includes partial dyadic tails, root-anchored exact certi
 - **中文：**《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》  
   DOI: https://doi.org/10.5281/zenodo.22182736
 
+### Layer VI — Exact finite valuation geometry
+
+- **English:** *Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words*  
+  DOI: https://doi.org/10.5281/zenodo.22197750
+
 See the complete [publication index](PUBLICATIONS.md).
 
 ## Absolute mathematical guardrails
@@ -204,6 +214,7 @@ EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 PROJECT_PROOF_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
 
+THIS_PAPER_GLOBAL_CLAIM = NONE
 W-NIGECT != STANDARD_COLLATZ_PROOF
 NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
 ```
