@@ -76,51 +76,125 @@ NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
 ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
 ```
 
-Archived W-NIGECT papers:
+Archived papers:
 
 - English: https://doi.org/10.5281/zenodo.22109060
 - 中文: https://doi.org/10.5281/zenodo.22108987
 
-## Phase V — Passive deterministic branch / universal outcome — CURRENT CORE OPEN PROGRAM
+## Phase V — Standard accelerated Collatz structural proof — PROJECT COMPLETE / EXTERNAL AUDIT PENDING
 
-Fix the classical positive policy:
-
-\[
-(\mu,c)=(3,1).
-\]
-
-The forward route is unique. The principal remaining question is outcome:
+The passive standard map is
 
 \[
-\forall n>0\text{ odd},\ \exists k:\ T^k(n)=1\ ?
+U(n)=\operatorname{oddpart}(3n+1).
 \]
 
-This is exactly the classical Collatz conjecture.
+The project proof architecture is built from the following bottom-up chain:
 
-Priority research directions:
+1. complete dyadic base map
+   \[
+   A(n)=\operatorname{oddpart}(n+1),
+   \qquad
+   n=2^aq-1;
+   \]
+2. exact standard inverse grammar
+   \[
+   U(p)=q\iff3p+1=2^bq;
+   \]
+3. LIVE / SOURCE interface exhaustion;
+4. complete direct-root entrance family
+   \[
+   G_m=\frac{4^m-1}{3};
+   \]
+5. threefold folding and power-depth deformation
+   \[
+   U(P_a(q))=P_{a-1}(3q),
+   \qquad
+   U^a(P_a(q))=\operatorname{oddpart}(3^aq-1);
+   \]
+6. finite exact inverse words;
+7. merge-suffix inheritance;
+8. rooted-suffix closure under all power lifts;
+9. rooted-suffix totality.
 
-- identify which structural information from the controlled parent systems survives after the control alphabet is frozen;
-- characterize the residue-imposed UP/FOLD sequence of the fixed branch;
-- exclude nontrivial fixed-branch cycles;
-- exclude unbounded fixed-branch positive-integer orbits;
-- continue finite-alphabet / Source-Lock / residue-transport analysis where it directly constrains the passive branch.
+```text
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+```
 
-## Independent technical program — NOT REQUIRED for completed control theorems
+Archived papers:
+
+- English: https://doi.org/10.5281/zenodo.22182820
+- 中文: https://doi.org/10.5281/zenodo.22182736
+
+See: [Layer V structural overview](dyadic-base-map-threefold-folding-global-completeness.md).
+
+## Phase VI — Exact finite valuation geometry and root-anchored certificates — ACTIVE
+
+This phase preserves research-history continuity by separating finite geometric refinement from the Layer V global-completeness manuscript.
+
+Core exact ledger:
+
+\[
+2^{A_K}n_K=3^Kn_0+C_w.
+\]
+
+Two different walls are tracked:
+
+\[
+P_w=2^{A_K}-3^K
+\]
+
+and
+
+\[
+H_w(n_0)=C_w-P_wn_0,
+\]
+
+with
+
+\[
+2^{A_K}(n_K-n_0)=H_w(n_0).
+\]
+
+Active tasks:
+
+- partial dyadic-tail geometry \((P^\partial,H^\partial)\);
+- root-anchored exact certificate formalism;
+- port-resolved finite inverse genealogy;
+- exact \(2\)-adic branch-separation laws;
+- compact MergeDAG organization;
+- structural translation and classification of finite paradoxical/stopping-window catalogs.
+
+## Phase VII — External proof audit and publication hardening — ACTIVE
+
+Priority tasks:
+
+- independent line-by-line verification of the rooted-suffix closure theorem;
+- exact counterexample qualification: objections must identify a failing formula, hypothesis, implication, or legal integer witness;
+- prior-art audit of elementary/classical components versus the project's interface architecture;
+- reproducibility packages and machine-checkable finite certificates;
+- journal-format preparation after independent mathematical review.
+
+## Separate technical programs — NOT REQUIRED for the frozen Layer V implication chain
 
 - PLDT;
 - MPD18;
-- pure-\(F\) periodicity;
-- pure-\(F\) cycle classification;
-- higher \(\nu_3=2\) residue-cylinder analysis.
+- legacy minimum-port periodicity;
+- older residue-cylinder subprograms;
+- brute-force expansion of numerical verification bounds when no new structure is produced.
 
-## Publication / prior-art track
+## Publication discipline
 
-- Maintain each theorem layer as a separate archived paper.
-- Continue prior-art review for signed affine controls and full nonzero-integer exact controllability.
-- Do not claim control-alphabet minimality unless separately proved.
+- maintain each theorem layer as a separate archived paper;
+- distinguish exact theorem, definition, finite computation, conjecture, and external review status;
+- do not claim novelty for classical affine or inverse formulas without prior-art review;
+- preserve the chronological discovery chain so later papers extend rather than overwrite earlier layers.
 
 ```text
-GLOBAL_COLLATZ = OPEN
-W-NIGECT != STANDARD_COLLATZ_PROOF
-PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+PROJECT_PROOF_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
 ```

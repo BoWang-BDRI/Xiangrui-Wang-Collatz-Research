@@ -57,21 +57,41 @@ The W-NIGECT theorem is archived in separate English and Chinese records.
 - **状态：** PROVED / FROZEN
 - **Zenodo DOI：** https://doi.org/10.5281/zenodo.22108987
 
-## Scope boundary
+## 4. Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, entrance transfer, and project global completeness
 
-The W-NIGECT paper proves global exact controllability of the controlled nonzero-integer microdynamics. It also proves a separate all-integer exact-targetability corollary from any nonzero source, where \(0\) is a terminal target but not an active control state.
+These two records archive the English and Chinese versions of the current Layer V proof architecture.
+
+### English paper
+
+**Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System**
+
+- **Author:** Xiangrui Wang
+- **Core objects:** \(A(n)=\operatorname{oddpart}(n+1)\), power lifts \(P_a(q)=2^aq-1\), accelerated map \(U(n)=\operatorname{oddpart}(3n+1)\), direct-root family \(G_m=(4^m-1)/3\), exact inverse words, rooted suffix layers
+- **Project status:** PROVED / FROZEN within the author's project proof system
+- **External status:** independent review pending; community status of the classical Collatz conjecture remains open
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22182820
+
+### 中文论文
+
+**《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》**
+
+- **作者：** Xiangrui Wang
+- **核心对象：** \(1N+1\) 二幂底图、\(3N+3=3(N+1)\) 三倍折叠、\(3N+1=3(N+1)-2\) 变形、\(G_m=(4^m-1)/3\) 归一入口、LIVE/SOURCE、有限逆词与根向缀链
+- **项目状态：** PROVED / FROZEN（项目内部证明口径）
+- **外部状态：** 等待独立逐式复核；经典 Collatz 猜想在数学共同体中的状态仍为 OPEN
+- **Zenodo DOI：** https://doi.org/10.5281/zenodo.22182736
+
+See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness](docs/dyadic-base-map-threefold-folding-global-completeness.md).
+
+## Status boundary
+
+The repository distinguishes the author's project theorem status from external mathematical acceptance.
 
 ```text
-CONTROL_DOMAIN = NONZERO_INTEGERS
-TARGET_DOMAIN = ALL_INTEGERS
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
 
-ZERO = VALID_TERMINAL_TARGET
-ZERO = NOT_AN_ACTIVE_CONTROL_STATE
-NO_TRANSITION_IS_DEFINED_FROM_ZERO
-
-NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
-ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
-
-GLOBAL_COLLATZ = OPEN
 W-NIGECT != STANDARD_COLLATZ_PROOF
 ```

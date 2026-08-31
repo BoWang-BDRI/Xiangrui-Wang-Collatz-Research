@@ -1,58 +1,109 @@
-# Open Problems
+# Open Problems and External Verification Tasks
 
-The controlled hierarchy now contains proved global-control theorems on positive odd integers and on the full nonzero-integer microdynamics. The remaining open problems must therefore be separated from those completed control layers.
+The repository now separates **internal project theorem status** from **external mathematical acceptance**.
 
-## A. Standard fixed passive branch
+```text
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+```
 
-Let
+The standard Collatz branch is therefore no longer treated here as an internally unresolved project problem. The remaining work is independent verification, prior-art audit, refinement, and continuation beyond the frozen proof architecture.
+
+## A. Independent audit of the Layer V project proof
+
+The highest-priority external task is a line-by-line audit of the implication chain in:
+
+- *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
+  https://doi.org/10.5281/zenodo.22182820
+- 《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》  
+  https://doi.org/10.5281/zenodo.22182736
+
+A mathematically relevant objection should identify at least one exact item such as:
+
+- a positive odd integer violating the claimed dyadic decomposition or standard inverse grammar;
+- a stated interface class that is not exhaustive;
+- a pair \((q,a)\) satisfying the hypotheses of the rooted-suffix closure theorem but violating its conclusion;
+- an exact legal orbit contradicting rooted-suffix totality;
+- a specific implication whose hypotheses hold while its conclusion fails.
+
+General statements that an exception may exist are not by themselves a refutation of a quantified symbolic proof.
+
+## B. Prior-art and novelty audit
+
+The following formulas have classical or elementary antecedents and must not be presented as standalone first discoveries without citation:
+
+- affine Collatz ledgers involving powers of \(2\) and \(3\);
+- one-step inverse formula \((2^aq-1)/3\);
+- direct-to-root values \((4^m-1)/3\);
+- standard parity/valuation encodings.
+
+The research program's distinctive organization to be audited for prior art includes:
+
+- dyadic base-map interpretation of \(A(n)=\operatorname{oddpart}(n+1)\);
+- ROOT / LIVE / SOURCE entrance semantics;
+- internal-entry versus one-time-source distinction;
+- first-hit entrance ownership;
+- root-anchored exact certificates;
+- port-resolved inverse genealogy and merged suffix organization;
+- the combined rooted-suffix closure architecture.
+
+## C. Finite valuation geometry — active continuation
+
+The following finite exact structures form the current continuation:
+
+- affine correction \(C_w\);
+- multiplicative gap
+  \[
+  P_w=2^{A_K}-3^K;
+  \]
+- actual height margin
+  \[
+  H_w(n_0)=C_w-P_wn_0;
+  \]
+- partial-tail quantities \(P^\partial,H^\partial\);
+- exact \(2\)-adic branch-separation depth;
+- root-anchored finite certificates.
+
+Open refinement questions include:
+
+- classify port-resolved finite valuation-word families;
+- quantify first-hit onset for higher LIVE ports \(85,341,5461,\ldots\);
+- organize the inverse trees into a compact MergeDAG representation;
+- determine which finite parity/stopping-window phenomena reduce to exact port-anchored certificate classes.
+
+## D. Rozier–Terracol paradoxical-window structural closure
+
+The finite paradoxical-window condition can be translated into exact height coordinates:
 
 \[
-T(n)=\operatorname{oddpart}(3n+1).
+P^\partial>0,
+\qquad
+H^\partial\ge0.
 \]
 
-For every starting value, the forward route is unique because \(T\) is a function.
+The active structural task is to classify all legal port-anchored certificates satisfying these inequalities and compare the resulting solution set with the known finite catalog.
 
-- **OPEN — Universal Passive Outcome = 1.** Determine whether every positive odd starting value reaches \(1\). This is exactly the accelerated Collatz conjecture.
-- **OPEN — Nontrivial fixed-\((3,1)\) cycles.**
-- **OPEN — Unbounded fixed-\((3,1)\) positive-integer orbit.**
+This is a formula-solution classification problem, not a request to extend a brute-force numerical scan.
 
-## B. Fixed-+3 branch
+## E. Controlled-system questions not needed for Layer V
 
-- **OPEN — Fixed-+3 Global Reset.** Collatz-equivalent through the positive odd 3-sheet conjugacy.
+The following remain separate mathematical questions:
 
-## C. Original fixed-multiplier mixed subsystem
+- minimality / optimality of the signed affine control alphabet;
+- shortest-path structure in W-NIGECT;
+- exact graph invariants of the controlled nonzero-integer microdynamics;
+- legacy PLDT / MPD18 / residue-cylinder subprograms where independently interesting.
 
-For \(\mu=3\) with \(c\in\{1,3\}\), W-MPOCCT proves local control-option completeness but not global reachability.
+## F. Publication and reproducibility program
 
-- **OPEN — Original fixed-multiplier global control completeness.**
-- **OPEN — Original fixed-multiplier mixed strong connectivity.**
-- **OPEN — Stronger 3-anchored simple-cycle embedding.**
+- maintain each theorem layer as a separate archived paper;
+- preserve explicit theorem status and proof boundaries;
+- maintain machine-checkable exact examples and certificates;
+- continue independent red-team review;
+- clearly distinguish internal project proof status from external community acceptance.
 
-## D. Port-lift / minimum-port program — BYPASSED
-
-The following remain open as standalone problems but are no longer required for either the positive four-mode theorem or W-NIGECT:
-
-- **OPEN — PLDT.**
-- **OPEN — MPD18.**
-- **OPEN — Non-descending periodicity of the pure minimum-port map.**
-- **OPEN — Full classification of pure minimum-port cycles.**
-- **OPEN — Higher \(\nu_3=2\) residue-cylinder closure.**
-
-## E. W-NIGECT structural questions
-
-The following are not needed for the proved theorem and remain separate research questions:
-
-- **OPEN — Minimality / optimality of the signed affine control alphabet.** W-NIGECT uses \(\mu\in\{1,3\}\), \(c\in\{-3,-1,1,3\}\); no minimality theorem is claimed.
-- **OPEN — Shortest-path / optimal-control structure.** Global reachability is proved constructively, but exact minimal path lengths are not classified.
-- **OPEN — Redundancy of negative multiplier modes.** Negative multipliers are algebraically sign-related to positive multipliers; a formal minimal directed-control statement has not been frozen.
-- **OPEN — Exact graph invariants of the nonzero-integer microdynamics.** Strong connectivity is proved, but finer graph structure remains open.
-
-## F. Prior-art / publication questions
-
-- Continue literature review for direct signed-control or nonzero-integer exact-controllability precedents.
-- No uniqueness or optimality claim is currently made for the W-NIGECT control alphabet.
-
-## Frozen control results
+## Frozen status summary
 
 ```text
 FOUR_MODE_ODD_SYSTEM_GLOBAL_CONTROL = PROVED / FROZEN
@@ -60,7 +111,9 @@ W_NIGECT = PROVED / FROZEN
 NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
 ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
 
-GLOBAL_COLLATZ = OPEN
-W-NIGECT != STANDARD_COLLATZ_PROOF
-PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+
+PROJECT_PROOF_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
 ```

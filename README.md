@@ -6,7 +6,7 @@ This repository is the public mathematical research index for **Collatz-type dis
 
 **Researcher:** Xiangrui Wang  
 **Institution:** Bipolar-Dynamics Research Institute (BDRI)  
-**Research area:** Collatz-type dynamics, arithmetic dynamics, controlled odd maps, signed affine control, dyadic microdynamics  
+**Research area:** Collatz-type dynamics, arithmetic dynamics, controlled odd maps, signed affine control, dyadic base maps, normalization ports, exact inverse dynamics  
 **Contact:** xljun521521@gmail.com
 
 ## Research hierarchy
@@ -44,15 +44,7 @@ On nonzero odd states, allow signed affine controls with
 \mu\in\{1,3\},\qquad c\in\{-3,-1,1,3\}.
 \]
 
-Sign reflection is an exact conjugacy, not time reversal. The positive and negative odd half-axes are connected by the explicit bridges
-
-\[
-1\to-2\to-1,
-\qquad
--1\to2\to1.
-\]
-
-The resulting signed odd control graph is globally strongly connected.
+Sign reflection is an exact conjugacy, not time reversal. The positive and negative odd half-axes are connected by explicit bridges, and the resulting signed odd control graph is globally strongly connected.
 
 ### Layer IV — Nonzero-integer exact micro-control
 
@@ -67,31 +59,100 @@ The **Wang Nonzero Integer Global Exact Control Theorem (W-NIGECT)** is **PROVED
 \forall X,Y\in\mathbb Z\setminus\{0\},\qquad X\leadsto Y.
 \]
 
-The active control domain is \(\mathbb Z\setminus\{0\}\), while the exact target domain is all of \(\mathbb Z\). Zero is a **valid terminal target**, but not an active control state; no transition is defined from zero.
-
-Accordingly, the separate **Wang All-Integer Exact Targetability Corollary** gives
-
-\[
-\forall X\in\mathbb Z\setminus\{0\},\ \forall Y\in\mathbb Z,\qquad X\leadsto Y.
-\]
+Zero is a valid terminal target but not an active control state.
 
 See [the W-NIGECT theorem overview](docs/w-nigect-global-exact-control-theorem.md).
 
-### Layer V — Standard Collatz: unique passive route, open universal outcome
+### Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, entrance transfer, and project global completeness
 
-The standard accelerated Collatz map fixes
-
-\[
-T(n)=\operatorname{oddpart}(3n+1).
-\]
-
-Its forward route from each initial state is unique by definition. The universal outcome question
+The current standard-map program is organized around two exact odd maps:
 
 \[
-\forall n>0\text{ odd},\ \exists k\ge0:\ T^k(n)=1\ ?
+A(n)=\operatorname{oddpart}(n+1),
+\qquad
+U(n)=\operatorname{oddpart}(3n+1).
 \]
 
-is exactly the classical Collatz conjecture and remains **OPEN**.
+Every positive odd integer has the unique dyadic address
+
+\[
+\boxed{n=2^aq-1},\qquad q=A(n)<n,
+\]
+
+so the power lifts
+
+\[
+P_a(q)=2^aq-1
+\]
+
+form a complete dyadic base tree.
+
+The standard accelerated edge grammar is
+
+\[
+\boxed{U(p)=q\iff3p+1=2^bq\iff p=\frac{2^bq-1}{3}}.
+\]
+
+The \(3N+1\) action on a power column satisfies
+
+\[
+\boxed{U(P_a(q))=P_{a-1}(3q)}\qquad(a\ge2),
+\]
+
+and the complete deformation block is
+
+\[
+\boxed{U^a(P_a(q))=\operatorname{oddpart}(3^aq-1)}.
+\]
+
+All direct-to-root odd states are
+
+\[
+\boxed{G_m=\frac{4^m-1}{3}},
+\]
+
+with
+
+\[
+\nu_3(G_m)=\nu_3(m),
+\]
+
+yielding the exhaustive **ROOT / LIVE / SOURCE** entrance classification.
+
+The current project proof then combines complete dyadic generation, exact interface grammar, power-depth deformation, finite inverse words, merge-suffix inheritance, and rooted-suffix closure under every power lift to obtain a project-level rooted-suffix totality theorem.
+
+```text
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+```
+
+This repository distinguishes the author's frozen project proof from independent community acceptance.
+
+See [the Layer V structural overview](docs/dyadic-base-map-threefold-folding-global-completeness.md).
+
+## Current continuation — exact finite valuation geometry
+
+The next series is separated from the global-completeness paper. Current finite exact objects include
+
+\[
+2^{A_K}n_K=3^Kn_0+C_w,
+\]
+
+\[
+P_w=2^{A_K}-3^K,
+\qquad
+H_w(n_0)=C_w-P_wn_0,
+\]
+
+with
+
+\[
+2^{A_K}(n_K-n_0)=H_w(n_0).
+\]
+
+The active continuation includes partial dyadic tails, root-anchored exact certificates, port-resolved inverse genealogy, MergeDAG organization, and structural translation of finite parity/stopping-window phenomena.
 
 ## Publications and archived papers
 
@@ -114,6 +175,13 @@ is exactly the classical Collatz conjecture and remains **OPEN**.
 - **中文：**《带符号仿射控制与强制二分下非零整数微动力的全局精确可控性》  
   DOI: https://doi.org/10.5281/zenodo.22108987
 
+### Layer V — Standard accelerated Collatz
+
+- **English:** *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
+  DOI: https://doi.org/10.5281/zenodo.22182820
+- **中文：**《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》  
+  DOI: https://doi.org/10.5281/zenodo.22182736
+
 See the complete [publication index](PUBLICATIONS.md).
 
 ## Absolute mathematical guardrails
@@ -131,8 +199,11 @@ ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
 
 SIGN_MIRROR != TIME_REVERSAL
 
-GLOBAL_COLLATZ = OPEN
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+PROJECT_PROOF_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
+
 W-NIGECT != STANDARD_COLLATZ_PROOF
-PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
 NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
 ```

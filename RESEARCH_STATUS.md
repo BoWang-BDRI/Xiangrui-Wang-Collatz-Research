@@ -1,6 +1,6 @@
 # Research Status
 
-“Frozen” means fixed for this public research index after symbolic proof and independent red-team checking; it is not a claim of peer-reviewed priority.
+“Frozen” means fixed for this public research index after symbolic proof and independent red-team checking; it is not by itself a claim of peer-reviewed priority or community acceptance.
 
 ## PROVED / FROZEN — Layer I: fixed-multiplier local control
 
@@ -13,7 +13,7 @@
 | Local UP/FOLD polarity | PROVED / FROZEN | Positive odd \(n>3\) |
 | RESET / ESCAPE in fixed-\(\mu=3\) mixed system | PROVED / FROZEN | Controlled policies |
 
-**Archived Layer I paper:** https://doi.org/10.5281/zenodo.22096604
+Archived Layer I paper: https://doi.org/10.5281/zenodo.22096604
 
 ## PROVED / FROZEN — Layer II: positive four-mode global control
 
@@ -36,10 +36,10 @@ the following are frozen:
 | Universal target simple-cycle embedding | PROVED / FROZEN |
 | Global escape control | PROVED / FROZEN |
 
-### Archived Layer II papers
+Archived Layer II papers:
 
-- **English:** https://doi.org/10.5281/zenodo.22104057
-- **中文：** https://doi.org/10.5281/zenodo.22104101
+- English: https://doi.org/10.5281/zenodo.22104057
+- 中文: https://doi.org/10.5281/zenodo.22104101
 
 ## PROVED / FROZEN — Layer III: signed odd global control
 
@@ -95,40 +95,117 @@ Rules:
 | Escape to \(+\infty\) and \(-\infty\) | PROVED / FROZEN |
 | All-integer exact targetability from nonzero source | PROVED / FROZEN |
 
+Archived W-NIGECT papers:
+
+- English: https://doi.org/10.5281/zenodo.22109060
+- 中文: https://doi.org/10.5281/zenodo.22108987
+
+## PROJECT-PROVED / EXTERNAL REVIEW PENDING — Layer V: standard accelerated Collatz odd system
+
+Define
+
+\[
+A(n)=\operatorname{oddpart}(n+1),
+\qquad
+U(n)=\operatorname{oddpart}(3n+1).
+\]
+
+The current Layer V project proof architecture freezes the following symbolic components:
+
+| Result | Project status |
+|---|---|
+| Complete dyadic base tree \(n=2^aq-1\) | PROVED / FROZEN |
+| Exact accelerated edge grammar \(U(p)=q\iff3p+1=2^bq\) | PROVED / FROZEN |
+| LIVE / SOURCE odd-interface exhaustion | PROVED / FROZEN |
+| Complete direct-root family \(G_m=(4^m-1)/3\) | PROVED / FROZEN |
+| \(\nu_3(G_m)=\nu_3(m)\) and ROOT/LIVE/SOURCE entrance trichotomy | PROVED / FROZEN |
+| Threefold folding / power-depth deformation | PROVED / FROZEN |
+| Finite exact inverse-word grammar | PROVED / FROZEN |
+| Merge suffix inheritance | PROVED / FROZEN |
+| Rooted suffix closure under power lifts | PROVED / FROZEN — project theorem |
+| Rooted-suffix totality | PROVED / FROZEN — project theorem |
+| Standard positive-integer Collatz conclusion | PROVED / FROZEN — project claim; external review pending |
+
+The decisive coordinates include
+
+\[
+P_a(q)=2^aq-1,
+\]
+
+\[
+U(P_a(q))=P_{a-1}(3q)\quad(a\ge2),
+\]
+
+and
+
+\[
+U^a(P_a(q))=\operatorname{oddpart}(3^aq-1).
+\]
+
+All direct-to-root odd states are
+
+\[
+G_m=\frac{4^m-1}{3}.
+\]
+
+### Archived Layer V papers
+
+- **English:** *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
+  https://doi.org/10.5281/zenodo.22182820
+- **中文：**《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》  
+  https://doi.org/10.5281/zenodo.22182736
+
+### Status firewall
+
 ```text
-W_NIGECT = PROVED / FROZEN
-NONZERO_INTEGER_GLOBAL_STRONG_CONNECTIVITY = PROVED / FROZEN
-ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
 ```
 
-### Archived W-NIGECT papers
+The repository therefore records two different statements and does not conflate them:
 
-- **English:** *Global Exact Controllability of the Nonzero-Integer Microdynamics under Signed Affine Controls and Forced Halving*  
-  https://doi.org/10.5281/zenodo.22109060
-- **中文：**《带符号仿射控制与强制二分下非零整数微动力的全局精确可控性》  
-  https://doi.org/10.5281/zenodo.22108987
+1. the project contains a frozen symbolic proof claiming global completeness;
+2. the classical Collatz conjecture remains open in the wider mathematical community until the proof receives independent external validation and acceptance.
 
-## BYPASSED / NOT REQUIRED for Layer II and Layer IV proofs
+## CURRENT CONTINUATION — finite valuation geometry and root-anchored certificates
 
-These remain open as standalone mathematics unless separately proved:
+The next series is separated from the Layer V global-completeness paper. Current exact finite structures include:
+
+| Result / object | Status |
+|---|---|
+| Affine ledger \(2^{A_K}n_K=3^Kn_0+C_w\) | PROVED |
+| Multiplicative coefficient gap \(P_w=2^{A_K}-3^K\) | PROVED |
+| Actual height margin \(H_w=C_w-P_wn_0\) | PROVED |
+| Exact identity \(2^{A_K}(n_K-n_0)=H_w\) | PROVED |
+| Partial-tail \(P^\partial,H^\partial\) criterion | PROVED |
+| Valuation-word / binary-word encoding | PROVED |
+| First-discrepancy \(2\)-adic separation | PROVED |
+| Root-anchored finite exact certificate | DEFINED / structurally valid |
+| Port-resolved finite inverse genealogy | ACTIVE RESEARCH |
+| RT paradoxical-window translation into \((P^\partial,H^\partial)\) coordinates | ACTIVE RESEARCH |
+
+## BYPASSED / separate technical programs
+
+These are no longer premises of the Layer V project proof and remain separate research objects unless independently completed:
 
 - PLDT;
 - MPD18;
-- pure-\(F\) non-descending periodicity;
-- pure-\(F\) cycle classification;
-- higher residue-cylinder closure for \(\nu_3=2\).
+- earlier minimum-port maps;
+- residue-cylinder subprograms;
+- legacy stopping-time and parity-window scans.
 
-## RETAINED OPEN — fixed passive Collatz branches
-
-| Problem | Status |
-|---|---|
-| Classical fixed-\((3,1)\) Collatz conjecture | OPEN |
-| Universal passive outcome \(=1\) | OPEN; exactly Collatz |
-| Fixed +3 global reset | OPEN; Collatz-equivalent |
-| Original fixed-multiplier \(\mu=3\), +1/+3 global control completeness | OPEN |
+## Repository-wide guardrails
 
 ```text
-GLOBAL_COLLATZ = OPEN
+PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+EXTERNAL_INDEPENDENT_REVIEW = PENDING
+COMMUNITY_STATUS_OF_COLLATZ = OPEN
+
+W_NIGECT = PROVED / FROZEN
 W-NIGECT != STANDARD_COLLATZ_PROOF
-PASSIVE_FORWARD_ROUTE_UNIQUENESS != UNIVERSAL_PASSIVE_OUTCOME
+
+NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
+PROJECT_PROOF_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
 ```
