@@ -122,8 +122,9 @@ The current Layer V project proof architecture freezes the following symbolic co
 | Threefold folding / power-depth deformation | PROVED / FROZEN |
 | Finite exact inverse-word grammar | PROVED / FROZEN |
 | Merge suffix inheritance | PROVED / FROZEN |
+| Rooted generative object formulation: integer state + inherited finite standard-\(U\) suffix genealogy | PROVED / FROZEN — project formulation |
 | Rooted suffix closure under power lifts | PROVED / FROZEN — project theorem |
-| Rooted-suffix totality | PROVED / FROZEN — project theorem |
+| Rooted generative totality | PROVED / FROZEN — project theorem |
 | Standard positive-integer Collatz conclusion | PROVED / FROZEN — project claim; external review pending |
 
 The decisive coordinates include
@@ -148,9 +149,13 @@ All direct-to-root odd states are
 G_m=\frac{4^m-1}{3}.
 \]
 
+The current proof object is not an isolated integer with a free residual variable. Each generated state is bound to its finite rooted genealogy; affine corrections and residuals are treated as derived ledgers of a finite chain rather than independent dynamical degrees of freedom.
+
 ### Archived Layer V papers
 
-- **English:** *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
+- **Latest English complete-analysis paper:** *Dyadic Base Map, Threefold Folding, Rooted Generative Coverage, and Global Normalization in the Accelerated Collatz Odd System (A Complete Analysis of the Collatz Conjecture)*  
+  https://doi.org/10.5281/zenodo.22246883
+- **Earlier English architecture record:** *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
   https://doi.org/10.5281/zenodo.22182820
 - **中文：**《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》  
   https://doi.org/10.5281/zenodo.22182736
@@ -160,6 +165,7 @@ G_m=\frac{4^m-1}{3}.
 ```text
 PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
 PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
+LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
 EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 ```
@@ -169,9 +175,14 @@ The repository therefore records two different statements and does not conflate 
 1. the project contains a frozen symbolic proof claiming global completeness;
 2. the classical Collatz conjecture remains open in the wider mathematical community until the proof receives independent external validation and acceptance.
 
-## CURRENT CONTINUATION — finite valuation geometry and root-anchored certificates
+## FINITE EXACT COMPANION — valuation geometry and root-anchored certificates
 
-The next series is separated from the Layer V global-completeness paper. Current exact finite structures include:
+This series is separated from the Layer V global-completeness paper. Its archived English paper is:
+
+**Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words**  
+https://doi.org/10.5281/zenodo.22197750
+
+Exact finite structures include:
 
 | Result / object | Status |
 |---|---|
@@ -183,8 +194,13 @@ The next series is separated from the Layer V global-completeness paper. Current
 | Valuation-word / binary-word encoding | PROVED |
 | First-discrepancy \(2\)-adic separation | PROVED |
 | Root-anchored finite exact certificate | DEFINED / structurally valid |
-| Port-resolved finite inverse genealogy | ACTIVE RESEARCH |
-| RT paradoxical-window translation into \((P^\partial,H^\partial)\) coordinates | ACTIVE RESEARCH |
+
+## Research chronology relevant to the current Layer V proof
+
+1. Global exact controllability in the enlarged signed nonzero-integer system — `10.5281/zenodo.22109060`.
+2. Dyadic base / threefold-folding / entrance-transfer architecture for the fixed standard map — `10.5281/zenodo.22182820`.
+3. Finite exact valuation geometry and root-anchored certificates — `10.5281/zenodo.22197750`.
+4. Rooted generative coverage and global normalization complete analysis — `10.5281/zenodo.22246883`.
 
 ## BYPASSED / separate technical programs
 
@@ -200,6 +216,7 @@ These are no longer premises of the Layer V project proof and remain separate re
 
 ```text
 PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
 EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 
