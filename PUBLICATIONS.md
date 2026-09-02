@@ -57,18 +57,27 @@ The W-NIGECT theorem is archived in separate English and Chinese records.
 - **状态：** PROVED / FROZEN
 - **Zenodo DOI：** https://doi.org/10.5281/zenodo.22108987
 
-## 4. Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, entrance transfer, and project global completeness
+## 4. Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, rooted generative coverage, and project global normalization
 
-These two records archive the English and Chinese versions of the current Layer V proof architecture.
+The Layer V program records the development from the dyadic/threefold architecture to the current rooted-generative complete-analysis manuscript. Earlier records are retained as provenance rather than overwritten.
 
-### English paper
+### Latest English complete-analysis paper
+
+**Dyadic Base Map, Threefold Folding, Rooted Generative Coverage, and Global Normalization in the Accelerated Collatz Odd System (A Complete Analysis of the Collatz Conjecture)**
+
+- **Author:** Xiangrui Wang
+- **Core objects:** \(A(n)=\operatorname{oddpart}(n+1)\), power lifts \(P_a(q)=2^aq-1\), accelerated map \(U(n)=\operatorname{oddpart}(3n+1)\), threefold identification \(3(N+1)\), direct-root family \(G_m=(4^m-1)/3\), exact inverse words, and rooted generative objects carrying finite standard-\(U\) suffix genealogy
+- **Proof architecture:** bottom-level dyadic generation \(\to\) threefold identification/deformation \(\to\) exact interface grammar \(\to\) rooted generative coverage \(\to\) project global normalization claim
+- **Project status:** PROVED / FROZEN within the author's project proof system
+- **External status:** independent review pending; community status of the classical Collatz conjecture remains open
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22246883
+
+### Earlier English Layer V architecture record
 
 **Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System**
 
 - **Author:** Xiangrui Wang
-- **Core objects:** \(A(n)=\operatorname{oddpart}(n+1)\), power lifts \(P_a(q)=2^aq-1\), accelerated map \(U(n)=\operatorname{oddpart}(3n+1)\), direct-root family \(G_m=(4^m-1)/3\), exact inverse words, rooted suffix layers
-- **Project status:** PROVED / FROZEN within the author's project proof system
-- **External status:** independent review pending; community status of the classical Collatz conjecture remains open
+- **Role in chronology:** earlier Layer V architecture record preceding the rooted-generative complete-analysis formulation
 - **Zenodo DOI:** https://doi.org/10.5281/zenodo.22182820
 
 ### 中文论文
@@ -81,7 +90,7 @@ These two records archive the English and Chinese versions of the current Layer 
 - **外部状态：** 等待独立逐式复核；经典 Collatz 猜想在数学共同体中的状态仍为 OPEN
 - **Zenodo DOI：** https://doi.org/10.5281/zenodo.22182736
 
-See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness](docs/dyadic-base-map-threefold-folding-global-completeness.md).
+See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Rooted Generative Coverage, and Global Normalization](docs/dyadic-base-map-threefold-folding-global-completeness.md).
 
 ## 5. Layer VI — Exact finite valuation geometry and root-anchored certificates
 
@@ -93,8 +102,20 @@ See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Entran
 - **Scope:** finite valuation words, affine height geometry, partial dyadic tails, direct-to-root normalization ports, exact finite inverse words, \(2\)-adic branch separation, and root-anchored finite certificates
 - **Main finite identity:** \(2^{A_K}(n_K-n_0)=H_w(n_0)\), with \(P_w=2^{A_K}-3^K\) and \(H_w(n_0)=C_w-P_wn_0\)
 - **Paper status:** mathematics and formal-definition repair PASS; no global convergence theorem is proved anew in this paper
+- **Role in chronology:** finite exact ledger/certificate layer developed between the first Layer V architecture record and the latest rooted-generative complete-analysis formulation
 - **Community status:** classical Collatz conjecture remains OPEN
 - **Zenodo DOI:** https://doi.org/10.5281/zenodo.22197750
+
+## Research chronology
+
+The public paper sequence relevant to the current Collatz proof architecture is:
+
+1. **Global exact control in the enlarged signed nonzero-integer system** — DOI `10.5281/zenodo.22109060`.
+2. **Dyadic base map / threefold folding / entrance-transfer architecture for the fixed standard map** — DOI `10.5281/zenodo.22182820`.
+3. **Finite exact valuation geometry and root-anchored certificates** — DOI `10.5281/zenodo.22197750`.
+4. **Rooted generative coverage and global normalization complete-analysis manuscript** — DOI `10.5281/zenodo.22246883`.
+
+This chronology records a change of proof object: from enlarged controllability, to the fixed standard map, to finite affine/residual ledgers, and finally to integer states bound to their rooted genealogy rather than treating residual data as independent state variables.
 
 ## Status boundary
 
@@ -103,9 +124,9 @@ The repository distinguishes the author's project theorem status from external m
 ```text
 PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
 PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
+LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
 EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 
-THIS_PAPER_GLOBAL_CLAIM = NONE
 W-NIGECT != STANDARD_COLLATZ_PROOF
 ```
