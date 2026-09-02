@@ -44,3 +44,31 @@ references:
         given-names: "Xiangrui"
     doi: "10.5281/zenodo.22108987"
     url: "https://doi.org/10.5281/zenodo.22108987"
+  - type: article
+    title: "Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22182820"
+    url: "https://doi.org/10.5281/zenodo.22182820"
+  - type: article
+    title: "加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22182736"
+    url: "https://doi.org/10.5281/zenodo.22182736"
+  - type: article
+    title: "Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22197750"
+    url: "https://doi.org/10.5281/zenodo.22197750"
+  - type: article
+    title: "Dyadic Base Map, Threefold Folding, Rooted Generative Coverage, and Global Normalization in the Accelerated Collatz Odd System (A Complete Analysis of the Collatz Conjecture)"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22246883"
+    url: "https://doi.org/10.5281/zenodo.22246883"
