@@ -63,7 +63,7 @@ Zero is a valid terminal target but not an active control state.
 
 See [the W-NIGECT theorem overview](docs/w-nigect-global-exact-control-theorem.md).
 
-### Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, entrance transfer, and project global completeness
+### Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, rooted generative coverage, and project global normalization
 
 The current standard-map program is organized around two exact odd maps:
 
@@ -119,11 +119,16 @@ with
 
 yielding the exhaustive **ROOT / LIVE / SOURCE** entrance classification.
 
-The current project proof then combines complete dyadic generation, exact interface grammar, power-depth deformation, finite inverse words, merge-suffix inheritance, and rooted-suffix closure under every power lift to obtain a project-level rooted-suffix totality theorem.
+The latest formulation binds each generated integer state to its inherited finite standard-\(U\) rooted suffix genealogy. The global induction object is therefore a **rooted generative object**, not an isolated integer plus an independent residual variable. The current project proof combines complete dyadic generation, threefold identification/deformation, exact interface grammar, inverse-word structure, merge-suffix inheritance, and rooted generative coverage.
+
+**Latest Layer V complete-analysis paper:**  
+*Dyadic Base Map, Threefold Folding, Rooted Generative Coverage, and Global Normalization in the Accelerated Collatz Odd System (A Complete Analysis of the Collatz Conjecture)*  
+DOI: https://doi.org/10.5281/zenodo.22246883
 
 ```text
 PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
 PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
+LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
 EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 ```
@@ -134,7 +139,7 @@ See [the Layer V structural overview](docs/dyadic-base-map-threefold-folding-glo
 
 ## Current continuation — exact finite valuation geometry
 
-The next series is separated from the global-completeness paper. Current finite exact objects include
+The finite exact series is kept separate from the global-completeness manuscript. Its core objects include
 
 \[
 2^{A_K}n_K=3^Kn_0+C_w,
@@ -152,12 +157,12 @@ with
 2^{A_K}(n_K-n_0)=H_w(n_0).
 \]
 
-The first paper in this continuation has now been archived on Zenodo:
+The first paper in this continuation has been archived on Zenodo:
 
 **Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words**  
 DOI: https://doi.org/10.5281/zenodo.22197750
 
-The active continuation includes partial dyadic tails, root-anchored exact certificates, port-resolved inverse genealogy, MergeDAG organization, and structural translation of finite parity/stopping-window phenomena.
+In the current proof chronology, this finite-geometry paper records the stage where affine corrections and residuals are treated as exact finite ledgers/certificates rather than independent dynamical state variables.
 
 ## Publications and archived papers
 
@@ -182,7 +187,9 @@ The active continuation includes partial dyadic tails, root-anchored exact certi
 
 ### Layer V — Standard accelerated Collatz
 
-- **English:** *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
+- **Latest English complete-analysis record:** *Dyadic Base Map, Threefold Folding, Rooted Generative Coverage, and Global Normalization in the Accelerated Collatz Odd System (A Complete Analysis of the Collatz Conjecture)*  
+  DOI: https://doi.org/10.5281/zenodo.22246883
+- **Earlier English architecture record:** *Dyadic Base Map, Threefold Folding, Entrance Transfer, and Global Completeness in the Accelerated Collatz Odd System*  
   DOI: https://doi.org/10.5281/zenodo.22182820
 - **中文：**《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》  
   DOI: https://doi.org/10.5281/zenodo.22182736
@@ -191,6 +198,13 @@ The active continuation includes partial dyadic tails, root-anchored exact certi
 
 - **English:** *Exact Valuation Geometry and Root-Anchored Certificates for the Accelerated Collatz Map I: Affine Height, Dyadic Normalization Ports, and Finite Inverse Words*  
   DOI: https://doi.org/10.5281/zenodo.22197750
+
+## Research chronology relevant to the current proof
+
+1. **Global exact control in an enlarged signed nonzero-integer system** — `10.5281/zenodo.22109060`.
+2. **Return to the fixed standard Collatz map through the dyadic base / threefold-folding architecture** — `10.5281/zenodo.22182820`.
+3. **Finite exact valuation geometry and root-anchored certificate layer** — `10.5281/zenodo.22197750`.
+4. **Rooted generative coverage and global normalization complete-analysis formulation** — `10.5281/zenodo.22246883`.
 
 See the complete [publication index](PUBLICATIONS.md).
 
@@ -210,11 +224,11 @@ ALL_INTEGER_EXACT_TARGETABILITY_FROM_NONZERO_SOURCE = PROVED / FROZEN
 SIGN_MIRROR != TIME_REVERSAL
 
 PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
+LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
 EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 PROJECT_PROOF_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
 
-THIS_PAPER_GLOBAL_CLAIM = NONE
 W-NIGECT != STANDARD_COLLATZ_PROOF
 NOVELTY_NOT_CLAIMED_WITHOUT_PRIOR_ART_REVIEW
 ```
