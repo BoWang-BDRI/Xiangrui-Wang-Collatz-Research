@@ -33,9 +33,12 @@ N_{\rm twin}(X)\text{ is unbounded}
 
 ## Repository contents
 
-- `paper/` — final manuscript sources and bibliography.
-- `code/` — exact-integer finite regression and counterexample-condition audit scripts.
-- `supplement/` — computational audit, provenance, and AI/LLM disclosure.
+- `paper/README.md` — paper title, abstract, version, and canonical Zenodo DOI.
+- `code/exact_integer_audit_v1_4.py` — exact finite regression audit.
+- `code/counterexample_condition_audit_v1_4.py` — exact counterexample-condition audit.
+- `CITATION.cff` — citation metadata for the Zenodo paper.
+
+The full manuscript PDF and complete v1.4.2 research package are archived under the Zenodo DOI above.
 
 ## Reproducibility
 
@@ -64,4 +67,4 @@ Please cite the archived Zenodo record:
 
 ## Status
 
-This directory preserves the public research record corresponding to the Zenodo DOI above. Journal submission and peer review are separate from the archival record.
+This directory preserves the public research index and reproducibility code corresponding to the Zenodo DOI above. Journal submission and peer review are separate from the archival record.
