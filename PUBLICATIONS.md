@@ -1,6 +1,10 @@
 # Publications
 
-This page indexes the archived papers associated with the public Collatz mathematics program led by **Xiangrui Wang** at the **Bipolar-Dynamics Research Institute (BDRI)**.
+This page indexes the archived mathematical papers associated with the public research program led by **Xiangrui Wang** at the **Bipolar-Dynamics Research Institute (BDRI)**. The repository contains the primary Collatz research sequence and an independent number-theory branch on twin primes.
+
+---
+
+# I. Collatz Mathematics Research
 
 ## 1. Layer I — Local control completeness
 
@@ -33,8 +37,6 @@ This page indexes the archived papers associated with the public Collatz mathema
 
 ## 3. Layer IV — W-NIGECT / nonzero-integer global exact control
 
-The W-NIGECT theorem is archived in separate English and Chinese records.
-
 ### English paper
 
 **Global Exact Controllability of the Nonzero-Integer Microdynamics under Signed Affine Controls and Forced Halving**
@@ -57,9 +59,7 @@ The W-NIGECT theorem is archived in separate English and Chinese records.
 - **状态：** PROVED / FROZEN
 - **Zenodo DOI：** https://doi.org/10.5281/zenodo.22108987
 
-## 4. Layer V — Standard accelerated Collatz: dyadic base map, threefold folding, rooted generative coverage, and project global normalization
-
-The Layer V program records the development from the dyadic/threefold architecture to the current rooted-generative complete-analysis manuscript. Earlier records are retained as provenance rather than overwritten.
+## 4. Layer V — Standard accelerated Collatz
 
 ### Latest English complete-analysis paper
 
@@ -85,7 +85,7 @@ The Layer V program records the development from the dyadic/threefold architectu
 **《加速考拉兹奇数系统的二幂底图、三倍折叠、入口迁移与全局完备性》**
 
 - **作者：** Xiangrui Wang
-- **核心对象：** \(1N+1\) 二幂底图、\(3N+3=3(N+1)\) 三倍折叠、\(3N+1=3(N+1)-2\) 变形、\(G_m=(4^m-1)/3\) 归一入口、LIVE/SOURCE、有限逆词与根向缀链
+- **核心对象：** \(N+1\) 二幂底图、\(3N+3=3(N+1)\) 三倍折叠、\(3N+1=3(N+1)-2\) 变形、\(G_m=(4^m-1)/3\) 归一入口、LIVE/SOURCE、有限逆词与根向缀链
 - **项目状态：** PROVED / FROZEN（项目内部证明口径）
 - **外部状态：** 等待独立逐式复核；经典 Collatz 猜想在数学共同体中的状态仍为 OPEN
 - **Zenodo DOI：** https://doi.org/10.5281/zenodo.22182736
@@ -106,27 +106,102 @@ See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Rooted
 - **Community status:** classical Collatz conjecture remains OPEN
 - **Zenodo DOI:** https://doi.org/10.5281/zenodo.22197750
 
-## Research chronology
-
-The public paper sequence relevant to the current Collatz proof architecture is:
+## Collatz research chronology
 
 1. **Global exact control in the enlarged signed nonzero-integer system** — DOI `10.5281/zenodo.22109060`.
 2. **Dyadic base map / threefold folding / entrance-transfer architecture for the fixed standard map** — DOI `10.5281/zenodo.22182820`.
 3. **Finite exact valuation geometry and root-anchored certificates** — DOI `10.5281/zenodo.22197750`.
 4. **Rooted generative coverage and global normalization complete-analysis manuscript** — DOI `10.5281/zenodo.22246883`.
 
-This chronology records a change of proof object: from enlarged controllability, to the fixed standard map, to finite affine/residual ledgers, and finally to integer states bound to their rooted genealogy rather than treating residual data as independent state variables.
+---
 
-## Status boundary
+# II. Twin Prime Research
 
-The repository distinguishes the author's project theorem status from external mathematical acceptance.
+## 6. A Complete Analysis of Twin Primes
+
+- **Author:** Xiangrui Wang
+- **Version:** v1.4.2
+- **Date:** September 11, 2026
+- **Research area:** twin primes, prime-generation structure, exact finite certification, prime-square activation, modulo-6 window geometry
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22701838
+- **GitHub research directory:** [`twin-prime/`](twin-prime/)
+- **Citation metadata:** [`twin-prime/CITATION.cff`](twin-prime/CITATION.cff)
+
+### Core exact structure
+
+The paper uses the odd-composite trajectories
+
+\[
+G_a(k)=a(a+2k)=a^2+2ak,
+\]
+
+and develops divisor-track embedding, prime-skeleton reduction, prime-square activation, odd square-shell closure, active support, exact pairwise and multi-track intersections, three-boundary window geometry, finite-stage certification, and permanent stability of certified regions.
+
+For ordinary twin-prime windows \((6n-1,6n+1)\), the finite exact certifier is
+
+\[
+T_{\rm fin}(n)=
+\prod_{p^2\le 6n+1,\ p\ge5}
+\left(1-\mathbf1_{p\mid(6n-1)}\right)
+\left(1-\mathbf1_{p\mid(6n+1)}\right),
+\]
+
+with the product over prime \(p\). The manuscript proves
+
+\[
+T_{\rm fin}(n)=1
+\iff
+(6n-1,6n+1)\text{ is an ordinary twin-prime pair}.
+\]
+
+It also proves the formal equivalence
+
+\[
+|\mathcal T|=\infty
+\iff
+\forall M\in\mathbb N\;\exists n>M:T_{\rm fin}(n)=1
+\iff
+N_{\rm twin}(X)\text{ is unbounded}
+\iff
+\lim_{X\to\infty}N_{\rm twin}(X)=\infty.
+\]
+
+### Reproducibility code
+
+- [`exact_integer_audit_v1_4.py`](twin-prime/code/exact_integer_audit_v1_4.py)
+- [`counterexample_condition_audit_v1_4.py`](twin-prime/code/counterexample_condition_audit_v1_4.py)
+
+Recorded v1.4.2 finite audits:
+
+```text
+PRIMARY EXACT-INTEGER AUDIT
+ASSERTIONS = 12,611,102
+VERDICT = PASS
+
+COUNTEREXAMPLE-CONDITION AUDIT
+AUDITED_CASES = 12,303,777
+IN_DOMAIN_COUNTEREXAMPLES_P1_P7 = NONE
+VERDICT = PASS
+```
+
+The canonical archived paper record is the Zenodo DOI above; GitHub provides the research index, citation metadata, and reproducibility code.
+
+---
+
+# Status boundaries
+
+The repository distinguishes project-level theorem claims, archival publication records, and external mathematical acceptance.
 
 ```text
 PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
-PROJECT_PROOF_ARCHIVED_ON_ZENODO = YES
 LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
-EXTERNAL_INDEPENDENT_REVIEW = PENDING
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 
-W-NIGECT != STANDARD_COLLATZ_PROOF
+TWIN_PRIME_ANALYSIS_ARCHIVED = YES
+TWIN_PRIME_FINAL_VERSION = v1.4.2
+TWIN_PRIME_ZENODO_DOI = 10.5281/zenodo.22701838
+PUBLIC_REPRODUCIBILITY_CODE = AVAILABLE
+
+FINITE_AUDIT != SUBSTITUTE_FOR_SYMBOLIC_PROOF
+PROJECT_THEOREM_STATUS != PEER_REVIEWED_COMMUNITY_ACCEPTANCE
 ```
