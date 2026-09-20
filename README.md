@@ -16,7 +16,7 @@ This repository is the public mathematical research index for **Xiangrui Wang** 
 | Research branch | Current record | DOI / files |
 |---|---|---|
 | **Collatz mathematics** | *A Complete Analysis of the Collatz Conjecture* project record | [10.5281/zenodo.22246883](https://doi.org/10.5281/zenodo.22246883) |
-| **Twin prime research** | *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1* (v2.0) | [10.5281/zenodo.22851583](https://doi.org/10.5281/zenodo.22851583) · [`twin-prime/`](twin-prime/) |
+| **Twin prime research** | *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1* (v2.0) | [10.5281/zenodo.22851583](https://doi.org/10.5281/zenodo.22851583) · [`twin-prime/`](twin-prime/) · [roadmap](twin-prime/RESEARCH_ROADMAP.md) |
 | **Publication index** | Archived research papers | [`PUBLICATIONS.md`](PUBLICATIONS.md) |
 
 ---
