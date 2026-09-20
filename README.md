@@ -16,7 +16,7 @@ This repository is the public mathematical research index for **Xiangrui Wang** 
 | Research branch | Current record | DOI / files |
 |---|---|---|
 | **Collatz mathematics** | *A Complete Analysis of the Collatz Conjecture* project record | [10.5281/zenodo.22246883](https://doi.org/10.5281/zenodo.22246883) |
-| **Twin prime research** | *A Complete Analysis of Twin Primes* | [10.5281/zenodo.22701838](https://doi.org/10.5281/zenodo.22701838) · [`twin-prime/`](twin-prime/) |
+| **Twin prime research** | *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1* (v2.0) | [10.5281/zenodo.22851583](https://doi.org/10.5281/zenodo.22851583) · [`twin-prime/`](twin-prime/) |
 | **Publication index** | Archived research papers | [`PUBLICATIONS.md`](PUBLICATIONS.md) |
 
 ---
@@ -175,160 +175,118 @@ W-NIGECT != STANDARD_COLLATZ_PROOF
 
 ## Current paper
 
-### **A Complete Analysis of Twin Primes**
+### **Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1**
+
+*Source Decomposition, Occupancy, and Exact Localization Between Consecutive Prime Squares*
 
 - **Author:** Xiangrui Wang
-- **Version:** v1.4.2
-- **Date:** September 11, 2026
-- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22701838
+- **Version:** v2.0
+- **Date:** September 20, 2026
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583
 - **Research directory:** [`twin-prime/`](twin-prime/)
 - **Citation metadata:** [`twin-prime/CITATION.cff`](twin-prime/CITATION.cff)
+- **Previous archived paper:** *A Complete Analysis of Twin Primes*, v1.4.2 — https://doi.org/10.5281/zenodo.22701838
 
-### 1. Canonical odd-composite trajectories
+### 1. Ordered odd-composite source trajectories
 
-For odd \(a\ge3\) and \(k\in\mathbb N_0\),
-
-\[
-\boxed{G_a(k)=a(a+2k)=a^2+2ak}.
-\]
-
-The framework treats odd composites through exact source-preserving trajectories and proves the divisor-track embedding relation. At Boolean occupancy level, composite-base tracks reduce to the prime skeleton.
-
-### 2. Prime-square activation and finite-stage certification
-
-For a prime base \(p\), the independent prime track activates at \(p^2\). Consecutive prime-square shells provide finite certification regions whose already-certified states remain stable as later tracks activate.
-
-The active support of an internal odd position is
+For every odd base \(a\ge3\),
 
 \[
-A(x)=\{p\ge5:p\text{ prime},\ p\mid x,\ p^2\le x\},
-\qquad
-m(x)=|A(x)|.
+\boxed{G_a=\{a^2+2ak:k\in\mathbb Z_{\ge0}\}}.
 \]
 
-For internal positions \(x\equiv\pm1\pmod6\),
+Their union is exactly the set of odd composite integers. Composite-base layers preserve factor-source provenance but contribute no new first-owned positions; the least-prime-factor skeleton activates at prime squares.
+
+### 2. Exact twin-prime localization operator
+
+For consecutive primes \(5\le p<q\), let \(\mathcal W(p,q)\) be the complete modulo-6 windows contained in \((p^2,q^2)\). Define
 
 \[
-\boxed{m(x)=0\iff x\text{ is prime}}.
+\Theta(n)=
+\prod_{\substack{r\in\mathbb P\\5\le r\le p}}
+\left(1-\mathbf1_{r\mid(6n-1)}\right)
+\left(1-\mathbf1_{r\mid(6n+1)}\right)
 \]
 
-### 3. Three-boundary window geometry
-
-The standard window is
+on the band, and
 
 \[
-W_n=(6n-1,6n+1).
+\boxed{L_{TS}(p,q)=\sum_{n\in\mathcal W(p,q)}\Theta(n)}.
 \]
 
-For each prime \(p\ge5\), the raw prime-track residues follow an exact modulo-6 period, and after the \(3\)-boundary hits are removed the internal hit gaps alternate between
+The exact-band localization theorem proves that \(L_{TS}(p,q)\) is exactly the number of actual twin-prime pairs wholly contained in \((p^2,q^2)\). It is an integer locator, not a density estimate.
+
+### 3. Strongly bound core candidate theorems
+
+The current paper treats the operator and the two candidate theorems as one load-bearing module:
 
 \[
-\boxed{2p\quad\text{and}\quad4p}.
+\boxed{C0:\ L_{TS}(p,q)\ge2}
 \]
 
-The exact window divisibility classes satisfy
+and
 
 \[
-p\mid(6n-1)\iff n\equiv6^{-1}\pmod p,
+\boxed{C1:\ L_{TS}(p,q)\ge q-p},
+\]
+
+for every consecutive prime pair \(5<p<q\). Since \(q-p\ge2\), \(C1\Rightarrow C0\). A complete analytic certification of C0 would immediately imply infinitely many twin-prime pairs because the consecutive prime-square bands are infinite in number and pairwise disjoint.
+
+### 4. First-owner coverage, overlap, and exact equivalents
+
+For each band, disjoint first-owner counting gives
+
+\[
+L_{TS}(p,q)=G(p,q)-F(p,q).
+\]
+
+Therefore the two core candidates are exactly equivalent to
+
+\[
+C0\iff F(p,q)\le G(p,q)-2,
 \]
 
 \[
-p\mid(6n+1)\iff n\equiv-6^{-1}\pmod p.
+C1\iff F(p,q)\le G(p,q)-(q-p).
 \]
 
-Once the relevant endpoint is at least \(p^2\), these divisibility classes are the active interruption classes of \(G_p\).
+The paper also separates repeated source hits on the same endpoint from windows whose two endpoints are composite, preventing endpoint-level overcounting from being mistaken for destroyed-window count.
 
-### 4. Exact finite twin-prime certifier
+### 5. CRT locator and survivor thresholds
 
-For
+The paired residue system yields an exact CRT floor-sum representation of \(L_{TS}\), together with sharp cyclic quantities \(J_2(p)\) and \(D_2(p)\) controlling one- and two-survivor guarantees under arbitrary translation. These are exact structural tools; they are not substituted for the universal C0/C1 lower bounds.
 
-\[
-P_n=\{p\ge5:p\text{ prime},\ p^2\le6n+1\},
-\]
+### 6. Proof-status boundary
 
-define
+The structural identities, source completeness, exact localization, first-owner decomposition, overlap identities, and CRT formulas are proved within the manuscript. C0 and C1 are the two core candidate theorems undergoing independent certification of their universal analytic bounds.
 
-\[
-\boxed{
-T_{\rm fin}(n)=
-\prod_{p\in P_n}
-\left(1-\mathbf1_{p\mid(6n-1)}\right)
-\left(1-\mathbf1_{p\mid(6n+1)}\right).
-}
-\]
+A counterexample to C0 is a consecutive prime pair \(5<p<q\) with \(L_{TS}(p,q)<2\).  
+A counterexample to C1 satisfies \(L_{TS}(p,q)<q-p\).
 
-The paper proves
+A gap in a submitted proof is not itself a numerical counterexample; it means the corresponding proof has not yet been certified.
 
-\[
-\boxed{T_{\rm fin}(n)=1\iff(6n-1,6n+1)\text{ is an ordinary twin-prime pair}}.
-\]
+### 7. Evidence and reproducibility
 
-The exceptional initial pair \((3,5)\) is handled separately.
+The current paper separates:
+- reproducible finite submission evidence;
+- larger internal exact-stress records;
+- universal analytic proof obligations.
 
-### 5. Unbounded finite-certification domain
-
-With finite stages \(D_b\), the manuscript proves
-
-\[
-D_3\subsetneq D_5\subsetneq D_7\subsetneq\cdots,
-\qquad
-\boxed{\bigcup_bD_b=\mathbb O}.
-\]
-
-Thus the same exact finite-certification rules extend without a finite upper boundary over the positive odd integers.
-
-### 6. Quantified twin-prime infinitude equivalence
-
-Let
-
-\[
-\mathcal T=\{n\in\mathbb N:T_{\rm fin}(n)=1\},
-\]
-
-and let \(N_{\rm twin}(X)\) be the cumulative number of twin-prime pairs up to \(X\). The final manuscript proves the formal equivalence
-
-\[
-\boxed{
-|\mathcal T|=\infty
-\iff
-\forall M\in\mathbb N\;\exists n>M:T_{\rm fin}(n)=1
-\iff
-N_{\rm twin}(X)\text{ is unbounded}
-\iff
-\lim_{X\to\infty}N_{\rm twin}(X)=\infty.
-}
-\]
-
-### 7. Reproducibility
-
-Public exact-integer audit scripts:
-
-- [`exact_integer_audit_v1_4.py`](twin-prime/code/exact_integer_audit_v1_4.py)
-- [`counterexample_condition_audit_v1_4.py`](twin-prime/code/counterexample_condition_audit_v1_4.py)
-
-Recorded final-package audit totals:
-
-```text
-PRIMARY EXACT-INTEGER AUDIT
-ASSERTIONS = 12,611,102
-VERDICT = PASS
-
-COUNTEREXAMPLE-CONDITION AUDIT
-AUDITED_CASES = 12,303,777
-IN_DOMAIN_COUNTEREXAMPLES_P1_P7 = NONE
-VERDICT = PASS
-```
-
-The computations are independent finite audits of the symbolic formulas; they are not substituted for the manuscript's exact integer derivations.
+Finite computation is used for implementation checks and counterexample search, not as a replacement for a universal proof. The existing public audit scripts remain in [`twin-prime/code/`](twin-prime/code/); they originated in the earlier v1.4.x package and are retained as historical reproducibility material unless a newer code package is explicitly archived.
 
 ### Twin-prime archival status
 
 ```text
-TWIN_PRIME_PAPER = A COMPLETE ANALYSIS OF TWIN PRIMES
-FINAL_ARCHIVED_VERSION = v1.4.2
-ZENODO_DOI = 10.5281/zenodo.22701838
-PUBLIC_REPRODUCIBILITY_CODE = AVAILABLE
-JOURNAL_SUBMISSION = SEPARATE FROM ZENODO ARCHIVE
+TWIN_PRIME_CURRENT_PAPER = TWIN-PRIME GENERATION COMPLETENESS: STRONG EXACT LOCALIZATION OPERATOR AND CORE CANDIDATE THEOREMS C0/C1
+CURRENT_VERSION = v2.0
+ZENODO_DOI = 10.5281/zenodo.22851583
+EXACT_LOCALIZATION_OPERATOR = L_TS
+CORE_CANDIDATE_THEOREMS = C0 + C1
+C1_IMPLIES_C0 = YES
+C0_IMPLIES_TWIN_PRIME_INFINITUDE = CONDITIONAL_ON_ANALYTIC_CERTIFICATION
+UNIVERSAL_C0_C1_CERTIFICATION = PENDING
+PREVIOUS_ARCHIVE_DOI = 10.5281/zenodo.22701838
+COMMUNITY_STATUS_OF_TWIN_PRIME_CONJECTURE = OPEN
 ```
 
 See the dedicated [Twin Prime Research index](TWIN_PRIME_RESEARCH.md).
@@ -350,7 +308,8 @@ The full paper chronology is maintained in [`PUBLICATIONS.md`](PUBLICATIONS.md).
 
 ## Independent number-theory branch
 
-1. **A Complete Analysis of Twin Primes** — `10.5281/zenodo.22701838`
+1. **Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1** — `10.5281/zenodo.22851583`
+   - Previous archive: *A Complete Analysis of Twin Primes* — `10.5281/zenodo.22701838`
 
 ---
 
