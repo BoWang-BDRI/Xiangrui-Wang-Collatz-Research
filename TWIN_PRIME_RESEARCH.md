@@ -11,7 +11,8 @@ This repository includes an independent number-theory research branch on twin pr
 **Date:** September 20, 2026  
 **Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583
 
-Research directory: [`twin-prime/`](twin-prime/)
+Research directory: [`twin-prime/`](twin-prime/)  
+Research roadmap: [`twin-prime/RESEARCH_ROADMAP.md`](twin-prime/RESEARCH_ROADMAP.md)
 
 Previous archive: **A Complete Analysis of Twin Primes**, v1.4.2 — https://doi.org/10.5281/zenodo.22701838
 
