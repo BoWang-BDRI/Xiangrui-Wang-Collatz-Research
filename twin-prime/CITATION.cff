@@ -1,18 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite the Zenodo record below."
-title: "A Complete Analysis of Twin Primes"
+title: "Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1"
 type: article
 authors:
   - family-names: Wang
     given-names: Xiangrui
-version: "1.4.2"
-date-released: 2026-09-11
-doi: 10.5281/zenodo.22701838
-url: https://doi.org/10.5281/zenodo.22701838
+version: "2.0"
+date-released: 2026-09-20
+doi: 10.5281/zenodo.22851583
+url: https://doi.org/10.5281/zenodo.22851583
 repository-code: https://github.com/BoWang-BDRI/Xiangrui-Wang-Collatz-Research/tree/main/twin-prime
 keywords:
   - twin primes
   - number theory
-  - prime gaps
-  - prime skeleton
-  - finite certification
+  - exact localization
+  - consecutive prime squares
+  - source decomposition
+  - first-owner occupancy
+  - Chinese remainder theorem
+  - candidate theorems
+  - C0
+  - C1
