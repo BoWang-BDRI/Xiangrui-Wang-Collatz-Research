@@ -1,70 +1,100 @@
-# Twin Prime Research — A Complete Analysis of Twin Primes
+# Twin Prime Research — Strong Exact Localization and Core Candidate Theorems C0/C1
 
 **Author:** Xiangrui Wang  
 **Research program:** Independent Number Theory Research  
-**Version:** v1.4.2 (September 11, 2026)  
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.22701838
+**Version:** v2.0 (September 20, 2026)  
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583
 
-## Paper
+## Current paper
 
-**A Complete Analysis of Twin Primes**
+**Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1**
 
-The paper develops an exact integer framework for odd-composite occupancy using
+*Source Decomposition, Occupancy, and Exact Localization Between Consecutive Prime Squares*
 
-\[
-G_a(k)=a(a+2k)=a^2+2ak,
-\]
-
-reduces Boolean occupancy to prime-base tracks, and derives prime-square activation, odd square-shell closure, modulo-6 window geometry, active-support classification, exact finite track intersections, finite-stage certification, and permanent stability of certified regions.
-
-For each ordinary twin-prime window \((6n-1,6n+1)\), the paper defines a finite exact certifier \(T_{\rm fin}(n)\) over the active primes and proves that \(T_{\rm fin}(n)=1\) exactly for an ordinary twin-prime pair.
-
-Writing \(\mathcal T=\{n\in\mathbb N:T_{\rm fin}(n)=1\}\) and \(N_{\rm twin}(X)\) for the cumulative twin-pair count, the manuscript proves the formal equivalence
+The paper develops a source-preserving exact integer framework based on the fixed odd-product trajectories
 
 \[
-|\mathcal T|=\infty
-\iff
-\forall M\in\mathbb N\;\exists n>M:T_{\rm fin}(n)=1
-\iff
-N_{\rm twin}(X)\text{ is unbounded}
-\iff
-\lim_{X\to\infty}N_{\rm twin}(X)=\infty.
+G_a=\{a^2+2ak:k\ge0\}.
 \]
+
+Their union is exactly the odd composites, while the modulo-6 windows
+
+\[
+W_n=(6n-1,6n+1)
+\]
+
+give the unique ordinary twin-prime windows.
+
+For consecutive primes \(5\le p<q\), the manuscript defines the strong exact localization operator
+
+\[
+L_{TS}(p,q),
+\]
+
+and proves that it equals exactly the number of actual twin-prime pairs wholly contained in \((p^2,q^2)\).
+
+## Core candidate-theorem module
+
+The current paper binds the exact locator to two coequal candidate theorems:
+
+\[
+C0:\quad L_{TS}(p,q)\ge2,
+\]
+
+\[
+C1:\quad L_{TS}(p,q)\ge q-p,
+\]
+
+for all consecutive primes \(5<p<q\).
+
+The first-owner identity
+
+\[
+L_{TS}(p,q)=G(p,q)-F(p,q)
+\]
+
+gives the exact equivalents
+
+\[
+C0\iff F(p,q)\le G(p,q)-2,
+\]
+
+\[
+C1\iff F(p,q)\le G(p,q)-(q-p).
+\]
+
+The paper also contains exact first-owner counting, endpoint-to-window overlap correction, activation-band first-owned structure, CRT floor-sum localization, and cyclic one-/two-survivor thresholds.
+
+## Logical status
+
+\[
+C1\Rightarrow C0.
+\]
+
+A complete analytic certification of C0 implies infinitely many twin-prime pairs.
+
+The manuscript deliberately separates exact structural theorems, the exact locator, candidate-theorem certification, finite evidence, and universal analytic proof obligations.
 
 ## Repository contents
 
-- `paper/README.md` — paper title, abstract, version, and canonical Zenodo DOI.
-- `code/exact_integer_audit_v1_4.py` — exact finite regression audit.
-- `code/counterexample_condition_audit_v1_4.py` — exact counterexample-condition audit.
-- `CITATION.cff` — citation metadata for the Zenodo paper.
+- `paper/README.md` — current paper metadata and abstract.
+- `CITATION.cff` — current citation metadata.
+- `code/exact_integer_audit_v1_4.py` — historical exact finite regression audit from the earlier package.
+- `code/counterexample_condition_audit_v1_4.py` — historical counterexample-condition audit from the earlier package.
 
-The full manuscript PDF and complete v1.4.2 research package are archived under the Zenodo DOI above.
+## Previous archive
 
-## Reproducibility
+The preceding archived paper was:
 
-The computational material is an independent finite audit of the symbolic formulas. It is not used as a substitute for the paper's exact integer arguments.
-
-Primary audit recorded in the final package:
-
-```text
-ASSERTIONS=12611102
-VERDICT=PASS
-```
-
-Counterexample-condition audit recorded in the final package:
-
-```text
-AUDITED_CASES=12303777
-IN_DOMAIN_COUNTEREXAMPLES_P1_P7=NONE
-VERDICT=PASS
-```
+**A Complete Analysis of Twin Primes**, v1.4.2  
+DOI: https://doi.org/10.5281/zenodo.22701838
 
 ## Citation
 
-Please cite the archived Zenodo record:
+Please cite the current Zenodo record:
 
-> Wang, Xiangrui. *A Complete Analysis of Twin Primes*. Zenodo, 2026. DOI: 10.5281/zenodo.22701838.
+> Wang, Xiangrui. *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1*. Zenodo, 2026. DOI: 10.5281/zenodo.22851583.
 
 ## Status
 
-This directory preserves the public research index and reproducibility code corresponding to the Zenodo DOI above. Journal submission and peer review are separate from the archival record.
+The current DOI is the canonical archived v2.0 paper record. Journal submission and independent peer review are separate from the Zenodo archive. The classical twin-prime conjecture remains open in the mathematical community pending independent acceptance of any proposed proof.
