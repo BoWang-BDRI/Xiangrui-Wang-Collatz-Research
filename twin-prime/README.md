@@ -75,6 +75,10 @@ A complete analytic certification of C0 implies infinitely many twin-prime pairs
 
 The manuscript deliberately separates exact structural theorems, the exact locator, candidate-theorem certification, finite evidence, and universal analytic proof obligations.
 
+## Research roadmap
+
+- [`RESEARCH_ROADMAP.md`](RESEARCH_ROADMAP.md) — consolidated route from the 2026-09-07 bottom-level occupancy baseline through corridor/paired-wheel audits to the current `L_TS + C0 + C1` architecture.
+
 ## Repository contents
 
 - `paper/README.md` — current paper metadata and abstract.
