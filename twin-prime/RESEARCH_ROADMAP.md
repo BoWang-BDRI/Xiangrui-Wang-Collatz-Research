@@ -1,10 +1,11 @@
 # 孪生素数研究路线｜Twin-Prime Research Roadmap
 
 **Researcher:** Xiangrui Wang  
-**Current canonical paper:** *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1*  
-**Current version:** v2.0  
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583  
-**Last roadmap consolidation:** 2026-09-20
+**Current canonical paper:** *Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows*  
+**Research direction:** **Twin Prime Research (Spatial Law)**  
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.22888216  
+**Previous canonical record:** *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1*, v2.0 — https://doi.org/10.5281/zenodo.22851583  
+**Last roadmap consolidation:** 2026-09-22
 
 > 本文件不是重新发明一套证明，而是把 Google Drive 中 2026-09-07 至 2026-09-20 的孪生素数研究记录按数学功能、时间顺序和当前状态压缩成一条可追踪研究路线。历史文件中的旧标签保留其当时语义；若后续研究修正了边界、量词或证明地位，以后续冻结节点和当前 v2.0 结构为准。
 
@@ -498,7 +499,66 @@ C0\Rightarrow\text{infinitely many twin primes}.
 
 ---
 
-# IX. 历史路线分类
+# IX. 第九阶段：有限边界自适应壳与空间法则
+
+**时间：2026-09-21—22**  
+**当前 canonical DOI:** https://doi.org/10.5281/zenodo.22888216
+
+这一阶段把孪生素数研究从 prime-square exact locator 进一步压缩为连续三幂壳上的全局空间生成问题：
+
+\[
+I_N=(3^N,3^{N+1}),\qquad N\ge2.
+\]
+
+前置来源不再预筛为素数，而是保留全部前置奇数
+
+\[
+O_N=\{a:3\le a<3^N,\ a\text{ odd}\}.
+\]
+
+所有当前层奇合数都由前置来源的真实乘积投影产生；实际落点完成去重后，再进行 prime/composite/twin-prime 分类。完整六窗口容量为
+
+\[
+C_N=3^{N-1},
+\]
+
+且精确窗口账本为
+
+\[
+\boxed{T_N=C_N-Q_N=C_N-U_N+D_N}.
+\]
+
+归一化投影条件
+
+\[
+1<\frac{a}{3^N}b<3
+\]
+
+在所有层使用同一形式；同时
+
+\[
+a\ge3^N,\ b\ge3
+\Rightarrow
+ab\ge3^{N+1},
+\]
+
+因此未来来源不能回填已经完成的当前壳，形成永久冻结。
+
+当前最终承重墙被压缩为
+
+\[
+\boxed{Q_N<C_N}.
+\]
+
+它等价于当前层至少保留一个永久双空窗口。有限计算、投影完备、永久封闭与自适应扩展均与这一全称非满覆盖定理保持逻辑分离。
+
+这一阶段定义了当前孪生素数研究的总标签：
+
+> **Twin Prime Research — Spatial Law**
+
+---
+
+# X. 历史路线分类
 
 ## A. 当前主线继续使用
 
@@ -541,7 +601,7 @@ C0\Rightarrow\text{infinitely many twin primes}.
 
 ---
 
-# X. 数值证据路线
+# XI. 数值证据路线
 
 项目一直维持同一纪律：
 
@@ -562,7 +622,7 @@ C0\Rightarrow\text{infinitely many twin primes}.
 
 ---
 
-# XI. 当前审核接口
+# XII. 当前审核接口
 
 当前最短研究路线不是继续扩大无反例扫描，而是审核两个全称 bandwise lower bounds：
 
@@ -586,7 +646,7 @@ C0\Rightarrow\text{infinitely many twin primes}.
 
 ---
 
-# XII. 一句话压缩
+# XIII. 一句话压缩
 
 \[
 \boxed{
