@@ -1,27 +1,46 @@
-# Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1
-
-## Source Decomposition, Occupancy, and Exact Localization Between Consecutive Prime Squares
+# Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows
 
 **Author:** Xiangrui Wang  
-**Version:** v2.0  
-**Date:** September 20, 2026  
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583
+**Date:** September 22, 2026  
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.22888216  
+**Research direction:** Twin Prime Research (**Spatial Law**)
 
 ## Abstract
 
-We study a twin-prime structure built around source preservation, ordered occupancy, and exact localization. For every odd base \(a\ge3\), the union of the fixed trajectories \(G_a=\{a^2+2ak:k\ge0\}\) is exactly the set of odd composite integers; its complement therefore gives the odd primes exactly. The modulo-6 windows \(W_n=(6n-1,6n+1)\) uniquely represent standard twin primes as double-unoccupied windows. Prime-square activation together with the least-prime-factor criterion yields finite-front source completeness and permanence of completed prefixes.
+We introduce an exact multiplicative-occupancy framework on the continuous geometric shell chain
+\[
+I_N=(3^N,3^{N+1}),\qquad N\ge2.
+\]
+Each shell is generated only from predecessor odd integers \(a<3^N\) through actual products \(ab\) satisfying
+\[
+3^N<ab<3^{N+1},
+\]
+with \(b\ge3\) odd. This yields an exact characterization of odd composite positions, an irreversible shell-closure property, and an exact four-state accounting of six-windows \((6m-1,6m+1)\).
 
-On this basis we define the strong exact localization operator \(L_{TS}(p,q)\) for consecutive primes \(p<q\). It examines every complete modulo-6 window in the open interval \((p^2,q^2)\) and equals exactly the number of actual twin-prime pairs in that interval. Two coequal core candidate theorems are strongly bound to this operator: C0 asserts \(L_{TS}(p,q)\ge2\), and C1 asserts \(L_{TS}(p,q)\ge q-p\), both on the fixed domain of consecutive primes \(5<p<q\). C1 implies C0, while complete analytic certification of C0 immediately implies the infinitude of twin primes.
+The resulting twin-window count is
+\[
+T_N=C_N-Q_N=C_N-U_N+D_N,
+\]
+where \(C_N=3^{N-1}\) is the shell capacity, \(U_N\) is the number of occupied non-3-divisible endpoints, \(D_N\) is the number of doubly occupied windows, and \(Q_N\) is the number of distinct interrupted windows.
 
-The manuscript further establishes disjoint first-owner counting, a two-level correction separating endpoint overlap from window overlap, the first-owned structure of a newly activated source, an exact CRT floor-sum locator, and translation-uniform two-survivor thresholds. By the first-owner identity, C0 and C1 are respectively equivalent to two explicit all-band upper bounds on exact deduplicated coverage. Thus the localization operator, C0, and C1 form one core load-bearing module rather than independent add-on statements. Proved structural identities, internally audited candidate-theorem structure, finite exact evidence, and universal analytic lower bounds requiring independent certification are kept logically separate.
+The shell chain is adaptive: once \(I_N\) is fully processed, no source born at or beyond \(3^N\) can retroactively alter it, and the same normalized projection law applies at the next boundary. The paper establishes the exact finite-shell structure and reduces twin-prime infinitude along this chain to the non-full-coverage statement
+\[
+Q_N<C_N
+\]
+for every \(N\), or more weakly for infinitely many \(N\). The reduction is exact; the universal non-full-coverage inequality is isolated as the remaining load-bearing theorem and is not assumed silently.
 
 ## Canonical archived paper
 
+https://doi.org/10.5281/zenodo.22888216
+
+## Previous canonical record
+
+*Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1*, v2.0  
 https://doi.org/10.5281/zenodo.22851583
 
-## Previous archive
+## Earlier archive
 
 *A Complete Analysis of Twin Primes*, v1.4.2  
 https://doi.org/10.5281/zenodo.22701838
 
-The parent [`twin-prime/`](../) directory contains the public research index, citation metadata, and existing audit code.
+The parent [`twin-prime/`](../) directory contains the public research index, citation metadata, roadmap, and existing audit code.
