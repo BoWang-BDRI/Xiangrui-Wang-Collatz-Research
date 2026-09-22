@@ -4,7 +4,7 @@ This page indexes the archived mathematical papers associated with the public re
 
 ---
 
-# I. Collatz Mathematics Research
+# I. Collatz Mathematics Research — Growth Law
 
 ## 1. Layer I — Local control completeness
 
@@ -115,86 +115,38 @@ See the Layer V structural overview: [Dyadic Base Map, Threefold Folding, Rooted
 
 ---
 
-# II. Twin Prime Research
+# II. Twin Prime Research — Spatial Law
 
-## 6. Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1
+## 6. Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows
+
+- **Author:** Xiangrui Wang
+- **Date:** September 22, 2026
+- **Research direction:** Twin Prime Research (**Spatial Law**)
+- **Core objects:** continuous shells \(I_N=(3^N,3^{N+1})\), predecessor odd-source projection, exact product landing and deduplication, six-window occupancy, permanent shell closure, finite-boundary adaptive extension
+- **Exact window identity:** \(T_N=C_N-Q_N=C_N-U_N+D_N\)
+- **Current universal proof obligation:** \(Q_N<C_N\)
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22888216
+- **GitHub research directory:** [`twin-prime/`](twin-prime/)
+- **Citation metadata:** [`twin-prime/CITATION.cff`](twin-prime/CITATION.cff)
+
+### Mathematical scope
+
+The paper proves the exact finite-shell projection and accounting framework and isolates the universal non-full-coverage inequality as the remaining load-bearing theorem. The shell sequence is not an arbitrary family of intervals: it is the continuous admissible chain \((3^N,3^{N+1})\), with predecessor sources bound to the left boundary.
+
+The exact structural results and finite verification records are not presented as a substitute for the unresolved universal inequality.
+
+## 7. Previous canonical twin-prime record
+
+### Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1
 
 *Source Decomposition, Occupancy, and Exact Localization Between Consecutive Prime Squares*
 
 - **Author:** Xiangrui Wang
 - **Version:** v2.0
 - **Date:** September 20, 2026
-- **Research area:** twin primes, exact source localization, consecutive prime squares, first-owner occupancy, CRT residue localization, candidate-theorem certification
 - **Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583
-- **GitHub research directory:** [`twin-prime/`](twin-prime/)
-- **Citation metadata:** [`twin-prime/CITATION.cff`](twin-prime/CITATION.cff)
-- **Previous archived paper:** *A Complete Analysis of Twin Primes*, v1.4.2 — https://doi.org/10.5281/zenodo.22701838
-
-### Exact structural core
-
-The manuscript retains the odd-composite source trajectories
-
-\[
-G_a=\{a^2+2ak:k\ge0\},
-\]
-
-the unique modulo-6 twin windows \(W_n=(6n-1,6n+1)\), prime-square activation, finite-front source completeness, and permanence of completed prefixes.
-
-The strong exact localization operator
-
-\[
-\boxed{L_{TS}(p,q)}
-\]
-
-is proved to equal exactly the number of actual twin-prime pairs in every consecutive prime-square band \((p^2,q^2)\).
-
-### Core candidate theorems
-
-For consecutive primes \(5<p<q\), the paper formulates two coequal core candidate theorems strongly bound to the exact locator:
-
-\[
-\boxed{C0:\ L_{TS}(p,q)\ge2},
-\]
-
-\[
-\boxed{C1:\ L_{TS}(p,q)\ge q-p}.
-\]
-
-The exact first-owner identity \(L_{TS}=G-F\) gives the equivalent coverage bounds
-
-\[
-C0\iff F\le G-2,
-\qquad
-C1\iff F\le G-(q-p).
-\]
-
-The manuscript also establishes disjoint first-owner counting, endpoint/window overlap correction, activation-band source structure, an exact CRT floor-sum locator, and sharp cyclic survivor thresholds.
-
-### Logical consequence and review status
-
-\[
-C1\Rightarrow C0.
-\]
-
-A complete analytic certification of C0 implies twin-prime infinitude because there are infinitely many pairwise-disjoint consecutive prime-square bands.
-
-The current manuscript explicitly separates:
-- proved exact structural identities;
-- the exact locator \(L_{TS}\);
-- the internally audited C0/C1 candidate-theorem module;
-- finite computational evidence;
-- universal analytic certification still required for C0/C1.
-
-A failed proof step is not, by itself, a counterexample. A C0 counterexample requires an exact eligible band with \(L_{TS}<2\); a C1 counterexample requires \(L_{TS}<q-p\).
-
-### Reproducibility status
-
-The repository retains the earlier public audit scripts:
-
-- [`exact_integer_audit_v1_4.py`](twin-prime/code/exact_integer_audit_v1_4.py)
-- [`counterexample_condition_audit_v1_4.py`](twin-prime/code/counterexample_condition_audit_v1_4.py)
-
-They are preserved as historical exact-integer reproducibility material from the prior package. The v2.0 paper distinguishes reproducible submission evidence from larger internal exact-stress records and does not treat finite computation as a universal proof.
+- **Role in chronology:** prime-square exact-localization stage preceding the current Spatial Law shell framework
+- **Earlier archive:** *A Complete Analysis of Twin Primes*, v1.4.2 — https://doi.org/10.5281/zenodo.22701838
 
 ---
 
@@ -207,14 +159,13 @@ PROJECT_GLOBAL_COLLATZ = PROVED / FROZEN
 LATEST_PROJECT_PROOF_DOI = 10.5281/zenodo.22246883
 COMMUNITY_STATUS_OF_COLLATZ = OPEN
 
-TWIN_PRIME_CURRENT_VERSION = v2.0
-TWIN_PRIME_CURRENT_DOI = 10.5281/zenodo.22851583
-TWIN_PRIME_EXACT_LOCATOR = L_TS
-TWIN_PRIME_CORE_CANDIDATES = C0 + C1
-C1_IMPLIES_C0 = YES
-C0_IMPLIES_TWIN_PRIME_INFINITUDE = CONDITIONAL_ON_ANALYTIC_CERTIFICATION
-UNIVERSAL_C0_C1_CERTIFICATION = PENDING
-PREVIOUS_TWIN_PRIME_DOI = 10.5281/zenodo.22701838
+TWIN_PRIME_RESEARCH_DIRECTION = SPATIAL LAW
+TWIN_PRIME_CURRENT_DOI = 10.5281/zenodo.22888216
+TWIN_PRIME_CURRENT_SHELL = I_N = (3^N, 3^(N+1))
+TWIN_PRIME_EXACT_WINDOW_IDENTITY = T_N = C_N - Q_N = C_N - U_N + D_N
+TWIN_PRIME_UNIVERSAL_NON_FULL_COVERAGE = PENDING
+PREVIOUS_TWIN_PRIME_DOI = 10.5281/zenodo.22851583
+EARLIER_TWIN_PRIME_ARCHIVE_DOI = 10.5281/zenodo.22701838
 COMMUNITY_STATUS_OF_TWIN_PRIME_CONJECTURE = OPEN
 
 FINITE_AUDIT != SUBSTITUTE_FOR_SYMBOLIC_PROOF
