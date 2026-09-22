@@ -2,11 +2,13 @@
 
 ### Bipolar-Dynamics Research Institute (BDRI)
 
-This repository is the public mathematical research index for **Xiangrui Wang** at the **Bipolar-Dynamics Research Institute (BDRI)**. The repository is centered on the Collatz research program and now also contains an independent number-theory branch on twin primes.
+This repository is the public mathematical research index for **Xiangrui Wang** at the **Bipolar-Dynamics Research Institute (BDRI)**. The research program is organized around two complementary mathematical directions: **Collatz Research (Growth Law)** and **Twin Prime Research (Spatial Law)**.
 
 **Researcher:** Xiangrui Wang  
+**Motto:** *With a mortal body, stand shoulder to shoulder with the gods!*  
 **Institution:** Bipolar-Dynamics Research Institute (BDRI)  
-**Research areas:** Collatz-type dynamics, arithmetic dynamics, exact integer control, dyadic coordinates, inverse dynamics, prime-generation structure, twin primes  
+**Research themes:** Collatz Research (**Growth Law**); Twin Prime Research (**Spatial Law**)  
+**Research areas:** Collatz-type dynamics, arithmetic dynamics, exact integer control, dyadic coordinates, inverse dynamics, multiplicative occupancy, prime-generation structure, twin primes  
 **Contact:** xljun521521@gmail.com
 
 ---
@@ -15,13 +17,13 @@ This repository is the public mathematical research index for **Xiangrui Wang** 
 
 | Research branch | Current record | DOI / files |
 |---|---|---|
-| **Collatz mathematics** | *A Complete Analysis of the Collatz Conjecture* project record | [10.5281/zenodo.22246883](https://doi.org/10.5281/zenodo.22246883) |
-| **Twin prime research** | *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1* (v2.0) | [10.5281/zenodo.22851583](https://doi.org/10.5281/zenodo.22851583) · [`twin-prime/`](twin-prime/) · [roadmap](twin-prime/RESEARCH_ROADMAP.md) |
+| **Collatz Research — Growth Law** | *A Complete Analysis of the Collatz Conjecture* project record | [10.5281/zenodo.22246883](https://doi.org/10.5281/zenodo.22246883) |
+| **Twin Prime Research — Spatial Law** | *Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows* | [10.5281/zenodo.22888216](https://doi.org/10.5281/zenodo.22888216) · [`twin-prime/`](twin-prime/) · [roadmap](twin-prime/RESEARCH_ROADMAP.md) |
 | **Publication index** | Archived research papers | [`PUBLICATIONS.md`](PUBLICATIONS.md) |
 
 ---
 
-# I. Collatz Mathematics Research
+# I. Collatz Mathematics Research — Growth Law
 
 ## Research hierarchy
 
@@ -171,121 +173,112 @@ W-NIGECT != STANDARD_COLLATZ_PROOF
 
 ---
 
-# II. Twin Prime Research
+# II. Twin Prime Research — Spatial Law
 
 ## Current paper
 
-### **Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1**
-
-*Source Decomposition, Occupancy, and Exact Localization Between Consecutive Prime Squares*
+### **Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows**
 
 - **Author:** Xiangrui Wang
-- **Version:** v2.0
-- **Date:** September 20, 2026
-- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22851583
+- **Date:** September 22, 2026
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22888216
+- **Research direction:** Twin Prime Research (**Spatial Law**)
 - **Research directory:** [`twin-prime/`](twin-prime/)
 - **Citation metadata:** [`twin-prime/CITATION.cff`](twin-prime/CITATION.cff)
-- **Previous archived paper:** *A Complete Analysis of Twin Primes*, v1.4.2 — https://doi.org/10.5281/zenodo.22701838
+- **Previous canonical record:** *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1*, v2.0 — https://doi.org/10.5281/zenodo.22851583
 
-### 1. Ordered odd-composite source trajectories
+### 1. Continuous admissible shell chain
 
-For every odd base \(a\ge3\),
-
-\[
-\boxed{G_a=\{a^2+2ak:k\in\mathbb Z_{\ge0}\}}.
-\]
-
-Their union is exactly the set of odd composite integers. Composite-base layers preserve factor-source provenance but contribute no new first-owned positions; the least-prime-factor skeleton activates at prime squares.
-
-### 2. Exact twin-prime localization operator
-
-For consecutive primes \(5\le p<q\), let \(\mathcal W(p,q)\) be the complete modulo-6 windows contained in \((p^2,q^2)\). Define
+For every integer \(N\ge2\), define
 
 \[
-\Theta(n)=
-\prod_{\substack{r\in\mathbb P\\5\le r\le p}}
-\left(1-\mathbf1_{r\mid(6n-1)}\right)
-\left(1-\mathbf1_{r\mid(6n+1)}\right)
+A_N=3^N,
+\qquad
+I_N=(A_N,3A_N)=(3^N,3^{N+1}).
 \]
 
-on the band, and
+The research domain is the continuous chain
 
 \[
-\boxed{L_{TS}(p,q)=\sum_{n\in\mathcal W(p,q)}\Theta(n)}.
+I_N\to I_{N+1}\to I_{N+2}\to\cdots .
 \]
 
-The exact-band localization theorem proves that \(L_{TS}(p,q)\) is exactly the number of actual twin-prime pairs wholly contained in \((p^2,q^2)\). It is an integer locator, not a density estimate.
+This shell chain is the spatial backbone of the current twin-prime program.
 
-### 3. Strongly bound core candidate theorems
+### 2. Predecessor odd-source projection
 
-The current paper treats the operator and the two candidate theorems as one load-bearing module:
+The source set contains **all predecessor odd integers**, not only primes:
 
 \[
-\boxed{C0:\ L_{TS}(p,q)\ge2}
+O_N=\{a:3\le a<A_N,\ a\text{ odd}\}.
 \]
 
-and
+A source contributes to the current shell through actual products satisfying
 
 \[
-\boxed{C1:\ L_{TS}(p,q)\ge q-p},
+A_N<ab<3A_N,
+\qquad b\ge3\text{ odd}.
 \]
 
-for every consecutive prime pair \(5<p<q\). Since \(q-p\ge2\), \(C1\Rightarrow C0\). A complete analytic certification of C0 would immediately imply infinitely many twin-prime pairs because the consecutive prime-square bands are infinite in number and pairwise disjoint.
+The union of these products is exactly the set of odd composite positions inside the shell. Prime/composite/twin-prime labels are assigned only after actual landing and deduplication.
 
-### 4. First-owner coverage, overlap, and exact equivalents
+### 3. Exact six-window accounting
 
-For each band, disjoint first-owner counting gives
+The complete non-3-divisible windows have total capacity
 
 \[
-L_{TS}(p,q)=G(p,q)-F(p,q).
+C_N=3^{N-1}.
 \]
 
-Therefore the two core candidates are exactly equivalent to
+Let \(Q_N\) be the number of distinct interrupted windows and \(T_N\) the number of double-free windows. Then
 
 \[
-C0\iff F(p,q)\le G(p,q)-2,
+\boxed{T_N=C_N-Q_N=C_N-U_N+D_N},
 \]
+
+where \(U_N\) is the number of occupied non-3-divisible endpoints and \(D_N\) is the number of doubly occupied windows.
+
+### 4. Scale-normalized transport and permanent closure
+
+With \(x=a/A_N\), the projection condition becomes
 
 \[
-C1\iff F(p,q)\le G(p,q)-(q-p).
+1<xb<3.
 \]
 
-The paper also separates repeated source hits on the same endpoint from windows whose two endpoints are composite, preventing endpoint-level overcounting from being mistaken for destroyed-window count.
+The normalized transport rule is independent of the shell scale. Moreover,
 
-### 5. CRT locator and survivor thresholds
+\[
+a\ge A_N,\quad b\ge3
+\quad\Longrightarrow\quad
+ab\ge3A_N,
+\]
 
-The paired residue system yields an exact CRT floor-sum representation of \(L_{TS}\), together with sharp cyclic quantities \(J_2(p)\) and \(D_2(p)\) controlling one- and two-survivor guarantees under arbitrary translation. These are exact structural tools; they are not substituted for the universal C0/C1 lower bounds.
+so later sources cannot retroactively fill a completed shell. Each shell therefore freezes permanently after its predecessor projections have been fully processed.
 
-### 6. Proof-status boundary
+### 5. Current load-bearing theorem
 
-The structural identities, source completeness, exact localization, first-owner decomposition, overlap identities, and CRT formulas are proved within the manuscript. C0 and C1 are the two core candidate theorems undergoing independent certification of their universal analytic bounds.
+The exact framework reduces the infinitude question along this shell chain to the non-full-coverage condition
 
-A counterexample to C0 is a consecutive prime pair \(5<p<q\) with \(L_{TS}(p,q)<2\).  
-A counterexample to C1 satisfies \(L_{TS}(p,q)<q-p\).
+\[
+\boxed{Q_N<C_N}.
+\]
 
-A gap in a submitted proof is not itself a numerical counterexample; it means the corresponding proof has not yet been certified.
+Equivalently, \(T_N\ge1\). If this holds for every admissible shell—or more weakly for infinitely many shells—the permanent double-free windows accumulate across pairwise disjoint shells.
 
-### 7. Evidence and reproducibility
-
-The current paper separates:
-- reproducible finite submission evidence;
-- larger internal exact-stress records;
-- universal analytic proof obligations.
-
-Finite computation is used for implementation checks and counterexample search, not as a replacement for a universal proof. The existing public audit scripts remain in [`twin-prime/code/`](twin-prime/code/); they originated in the earlier v1.4.x package and are retained as historical reproducibility material unless a newer code package is explicitly archived.
+The shell construction, projection completeness, exact accounting, and no-retroactive-fill property are separated from this final universal inequality. Finite computation is evidence and counterexample pressure, not a substitute for a universal proof.
 
 ### Twin-prime archival status
 
 ```text
-TWIN_PRIME_CURRENT_PAPER = TWIN-PRIME GENERATION COMPLETENESS: STRONG EXACT LOCALIZATION OPERATOR AND CORE CANDIDATE THEOREMS C0/C1
-CURRENT_VERSION = v2.0
-ZENODO_DOI = 10.5281/zenodo.22851583
-EXACT_LOCALIZATION_OPERATOR = L_TS
-CORE_CANDIDATE_THEOREMS = C0 + C1
-C1_IMPLIES_C0 = YES
-C0_IMPLIES_TWIN_PRIME_INFINITUDE = CONDITIONAL_ON_ANALYTIC_CERTIFICATION
-UNIVERSAL_C0_C1_CERTIFICATION = PENDING
-PREVIOUS_ARCHIVE_DOI = 10.5281/zenodo.22701838
+TWIN_PRIME_RESEARCH_DIRECTION = SPATIAL LAW
+TWIN_PRIME_CURRENT_PAPER = FINITE-BOUNDARY ADAPTIVE SHELLS AND EXACT MULTIPLICATIVE OCCUPANCY FOR TWIN-PRIME WINDOWS
+TWIN_PRIME_CURRENT_DOI = 10.5281/zenodo.22888216
+CONTINUOUS_ADMISSIBLE_SHELL = I_N = (3^N, 3^(N+1))
+EXACT_WINDOW_IDENTITY = T_N = C_N - Q_N = C_N - U_N + D_N
+UNIVERSAL_NON_FULL_COVERAGE_QN_LT_CN = PENDING
+PREVIOUS_TWIN_PRIME_DOI = 10.5281/zenodo.22851583
+EARLIER_TWIN_PRIME_ARCHIVE_DOI = 10.5281/zenodo.22701838
 COMMUNITY_STATUS_OF_TWIN_PRIME_CONJECTURE = OPEN
 ```
 
@@ -308,8 +301,10 @@ The full paper chronology is maintained in [`PUBLICATIONS.md`](PUBLICATIONS.md).
 
 ## Independent number-theory branch
 
-1. **Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1** — `10.5281/zenodo.22851583`
-   - Previous archive: *A Complete Analysis of Twin Primes* — `10.5281/zenodo.22701838`
+1. **Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows** — `10.5281/zenodo.22888216`
+   - Research direction: **Twin Prime Research (Spatial Law)**
+   - Previous canonical record: *Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1* — `10.5281/zenodo.22851583`
+   - Earlier archive: *A Complete Analysis of Twin Primes* — `10.5281/zenodo.22701838`
 
 ---
 
