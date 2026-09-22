@@ -1,23 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite the Zenodo record below."
-title: "Twin-Prime Generation Completeness: Strong Exact Localization Operator and Core Candidate Theorems C0/C1"
+title: "Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows"
 type: article
 authors:
   - family-names: Wang
     given-names: Xiangrui
-version: "2.0"
-date-released: 2026-09-20
-doi: 10.5281/zenodo.22851583
-url: https://doi.org/10.5281/zenodo.22851583
+    orcid: "https://orcid.org/0009-0003-5648-7874"
+version: "0.2"
+date-released: 2026-09-22
+doi: 10.5281/zenodo.22888216
+url: https://doi.org/10.5281/zenodo.22888216
 repository-code: https://github.com/BoWang-BDRI/Xiangrui-Wang-Collatz-Research/tree/main/twin-prime
 keywords:
   - twin primes
   - number theory
-  - exact localization
-  - consecutive prime squares
-  - source decomposition
-  - first-owner occupancy
-  - Chinese remainder theorem
-  - candidate theorems
-  - C0
-  - C1
+  - spatial law
+  - finite-boundary adaptive shells
+  - multiplicative occupancy
+  - predecessor odd sources
+  - continuous admissible shells
+  - exact window accounting
+  - non-full coverage
