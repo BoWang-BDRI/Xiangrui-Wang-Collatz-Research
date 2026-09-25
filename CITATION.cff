@@ -72,3 +72,17 @@ references:
         given-names: "Xiangrui"
     doi: "10.5281/zenodo.22246883"
     url: "https://doi.org/10.5281/zenodo.22246883"
+  - type: article
+    title: "Integer Arithmetic Growth Laws / 整数四则运算生长法则"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22959590"
+    url: "https://doi.org/10.5281/zenodo.22959590"
+  - type: article
+    title: "RB论文"
+    authors:
+      - family-names: "Wang"
+        given-names: "Xiangrui"
+    doi: "10.5281/zenodo.22953186"
+    url: "https://doi.org/10.5281/zenodo.22953186"
