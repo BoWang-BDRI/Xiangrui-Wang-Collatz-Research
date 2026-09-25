@@ -4,6 +4,25 @@ This page indexes the archived mathematical papers associated with the public re
 
 ---
 
+# Foundation and current framework records
+
+## Integer Arithmetic Growth Laws / 整数四则运算生长法则
+
+- **Author:** Xiangrui Wang
+- **Role:** foundational framework record for the arithmetic-growth research program
+- **Core reference-kernel branch:** \(A(N)=\operatorname{oddpart}(N+1)\)
+- **Core structural results:** unique core decomposition, strict descent, canonical finite addresses, root-entry partition, binary block deletion, exact dyadic-window counting, zero-count depth, recursive generation, and affine upper-layer interfaces
+- **Scope boundary:** the paper freezes the state-space framework; global dynamics of any specific upper-layer branch require separate proofs
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22959590
+
+## RB paper
+
+- **Record label:** RB论文
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22953186
+- **Note:** repository label follows the author-provided record name; no unverified title metadata has been inferred here.
+
+---
+
 # I. Collatz Mathematics Research — Growth Law
 
 ## 1. Layer I — Local control completeness
