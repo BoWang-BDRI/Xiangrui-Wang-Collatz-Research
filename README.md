@@ -5,7 +5,7 @@
 This repository is the public mathematical research index for **Xiangrui Wang** at the **Bipolar-Dynamics Research Institute (BDRI)**. The research program is organized around two complementary mathematical directions: **Collatz Research (Growth Law)** and **Twin Prime Research (Spatial Law)**.
 
 **Researcher:** Xiangrui Wang  
-**Motto:** *With a mortal body, stand shoulder to shoulder with the gods!*  
+**Motto:** **以凡人之躯，比肩神明，吾之神力，皆源法则！**  
 **Institution:** Bipolar-Dynamics Research Institute (BDRI)  
 **Research themes:** Collatz Research (**Growth Law**); Twin Prime Research (**Spatial Law**)  
 **Research areas:** Collatz-type dynamics, arithmetic dynamics, exact integer control, dyadic coordinates, inverse dynamics, multiplicative occupancy, prime-generation structure, twin primes  
@@ -19,7 +19,41 @@ This repository is the public mathematical research index for **Xiangrui Wang** 
 |---|---|---|
 | **Collatz Research — Growth Law** | *A Complete Analysis of the Collatz Conjecture* project record | [10.5281/zenodo.22246883](https://doi.org/10.5281/zenodo.22246883) |
 | **Twin Prime Research — Spatial Law** | *Finite-Boundary Adaptive Shells and Exact Multiplicative Occupancy for Twin-Prime Windows* | [10.5281/zenodo.22888216](https://doi.org/10.5281/zenodo.22888216) · [`twin-prime/`](twin-prime/) · [roadmap](twin-prime/RESEARCH_ROADMAP.md) |
+| **Integer Arithmetic Growth Laws — Foundation Framework** | *整数四则运算生长法则* | [10.5281/zenodo.22959590](https://doi.org/10.5281/zenodo.22959590) |
+| **RB paper** | RB论文 | [10.5281/zenodo.22953186](https://doi.org/10.5281/zenodo.22953186) |
 | **Publication index** | Archived research papers | [`PUBLICATIONS.md`](PUBLICATIONS.md) |
+
+---
+
+# Foundation Framework — Integer Arithmetic Growth Laws
+
+## **整数四则运算生长法则**
+
+- **Author:** Xiangrui Wang
+- **Role:** foundational framework paper for the arithmetic-growth research program
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.22959590
+
+The framework separates a **reference-kernel state space** from separately specified upper-layer arithmetic growth rules. Its first strict branch uses
+
+\[
+A(N)=\operatorname{oddpart}(N+1)
+\]
+
+on positive odd integers. The foundation paper freezes the following structural layer:
+
+- unique decomposition
+  \[
+  N=2^a q-1,\qquad a=\nu_2(N+1),\quad q=A(N)<N;
+  \]
+- strict descent of the reference kernel and finite reachability of the root \(1\);
+- exact one-level inverse fibers;
+- canonical finite addresses after removal of the degenerate root self-loop;
+- root-entry partition \(R_k=2^k-1\) and coverage domains \(C_k\);
+- binary block deletion, exact entry classification, dyadic-window counts, and zero-count depth;
+- mutually inverse decomposition / generation algorithms and nonredundant bounded enumeration;
+- a general affine interface for legal upper-layer branches such as \((mN+c)/d\), without transferring unproved global dynamical claims.
+
+This paper is treated as the **foundation reference** for subsequent branch papers. Upper-layer convergence, cycle structure, first-hit Gate behavior, and other dynamical conclusions remain branch-specific proof obligations.
 
 ---
 
